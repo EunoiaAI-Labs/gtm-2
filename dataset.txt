@@ -1,0 +1,2180 @@
+HTML
+Basic Tags
+<html> </html>
+Creates an HTML document
+<head> </head>
+Sets off the title & other info that isn't displayed
+<body> </body>
+Sets off the visible portion of the document
+<title> </title>
+Puts name of the document in the title bar; when
+bookmarking pages, this is what is bookmarked
+Body attributes (only used in email newsletters)
+<body bgcolor=?>
+Sets background color, using name or hex value
+<body text=?>
+Sets text color, using name or hex value
+<body link=?>
+Sets color of links, using name or hex value
+<body vlink=?>
+Sets color of visited links, using name or hex value
+<body alink=?>
+Sets color of active links (while mouse-clicking)
+Text Tags
+<pre> </pre>
+Creates preformatted text
+<h1> </h1> --> <h6> </h6>
+Creates headlines -- H1=largest, H6=smallest
+<b> </b>
+Creates bold text (should use <strong> instead)
+<i> </i>
+Creates italicized text (should use <em> instead)
+<tt> </tt>
+Creates typewriter-style text
+<code> </code>
+Used to define source code, usually monospace
+<cite> </cite>
+Creates a citation, usually processed in italics
+<address> </address>
+Creates address section, usually processed in italics
+<em> </em>
+Emphasizes a word (usually processed in italics)
+<strong> </strong>
+Emphasizes a word (usually processed in bold)
+<font size=?> </font>
+Sets size of font - 1 to 7 (should use CSS instead)
+<font color=?> </font>
+Sets font color (should use CSS instead)
+<font face=?> </font>
+Defines the font used (should use CSS instead)
+Links
+<a href="URL">clickable text</a>
+Creates a hyperlink to a Uniform Resource Locator
+<a href="mailto:EMAIL_ADDRESS">clickable text</a>
+Creates a hyperlink to an email address
+<a name="NAME">
+Creates a target location within a document
+<a href="#NAME">clickable text</a>
+Creates a link to that target location
+Formatting
+<p> </p>
+Creates a new paragraph
+<br>
+AInserts a line break (carriage return)
+<blockquote> </blockquote>
+Puts content in a quote - indents text from both sides
+<div> </div>
+Used to format block content with CSS
+<span> </span>
+Used to format inline content with CSS
+Lists
+<ul> </ul>
+Creates an unordered list
+<ol start=?> </ol>
+Creates an ordered list (start=xx,
+where xx is a counting number)
+<li> </li>
+Encompasses each list item
+<dl> </dl>
+Creates a definition list
+<dt>
+Precedes each defintion term
+<dd>
+Precedes each defintion
+Graphical elements
+<hr>
+Inserts a horizontal rule
+<hr size=?>
+Sets size (height) of horizontal rule
+<hr width=?>
+Sets width of rule (as a % or absolute pixel length)
+<hr noshade>
+Creates a horizontal rule without a shadow
+<img src="URL" />
+Adds image; it is a separate file located at the URL
+<img src="URL" align=?>
+Aligns image left/right/center/bottom/top/middle (use CSS)
+<img src="URL" border=?>
+Sets size of border surrounding image (use CSS)
+<img src="URL" height=?>
+Sets height of image, in pixels
+<img src="URL" width=?>
+Sets width of image, in pixels
+<img src="URL" alt=?>
+Sets the alternate text for browsers that can't
+process images (required by the ADA)
+HTML Cheatsheet page 2 of 2
+Forms
+<form> </form>
+Defines a form
+<select multiple name=? size=?> </select>
+Creates a scrolling menu. Size sets the number of
+menu items visible before user needs to scroll.
+<select name=?> </select>
+Creates a pulldown menu
+<option>
+Sets off each menu item
+<textarea name=? cols="x" rows="y"></textarea>
+Creates a text box area. Columns set the width;
+rows set the height.
+<input type="checkbox" name=? value=?>
+Creates a checkbox.
+<input type="checkbox" name=? value=? checked>
+Creates a checkbox which is pre-checked.
+<input type="radio" name=? value=?>
+Creates a radio button.
+<input type="radio" name=? value=? checked>
+Creates a radio button which is pre-checked.
+<input type="text" name=? size=?>
+Creates a one-line text area. Size sets length, in
+characters.
+<input type="submit" value=?>
+Creates a submit button. Value sets the text in the
+submit button.
+<input type="image" name=? src=? border=? alt=?>
+Creates a submit button using an image.
+<input type="reset">
+Creates a reset button
+Tables (use only for data layout - use CSS for page layout) Table attributes (only use for email newsletters)
+<table> </table>
+Creates a table
+<tr> </tr>
+Sets off each row in a table
+<td> </td>
+Sets off each cell in a row
+<th> </th>
+Sets off the table header (a normal cell with bold,
+centered text)
+<table border=?>
+Sets the width of the border around table cells
+<table cellspacing=?>
+Sets amount of space between table cells
+<table cellpadding=?>
+Sets amount of space between a cell's border and
+its contents
+<table width=?>
+Sets width of the table in pixels or as a percentage
+<tr align=?>
+Sets alignment for cells within the row
+(left/center/right)
+<td align=?>
+Sets alignment for cells (left/center/right)
+<tr valign=?>
+Sets vertical alignment for cells within the row
+(top/middle/bottom)
+<td valign=?>
+Sets vertical alignment for cell (top/middle/bottom)
+<td rowspan=?>
+Sets number of rows a cell should span (default=1)
+<td colspan=?>
+Sets number of columns a cell should span
+<td nowrap>
+Prevents lines within a cell from being broken to fit.
+<!DOCTYPE html>
+Starts the HTML file
+Healthy Cooking Cheat Sheet
+0 uhs.berkeley.edu/wellness
+wellnessfacstaff@berkeley.edu
+Cooking Dried Beans
+1. Soak: Quick soak (reduces gas-causing sugars most) by covering beans with 2 inches of water and
+bring to a boil. Turn off heat and let soak for 1 hour. Drain and rinse.
+2. Cook: Cover with at least 2 inches of water, cook over low heat, stir gently and occasionally. Takes
+30-120 minutes, depending on type.
+3. Leftovers can be frozen.
+Food Safety
+• Wash hands often, especially after handling raw meat/poultry/seafood/eggs
+• Store raw meat/poultry/seafood in the bottom shelf of the fridge
+• Invest in a thermometer to make sure safe temperatures are reached
+• Refrigerate leftovers within two hours
+• Wash produce before use
+Roasting Vegetables
+1. Preheat oven to 425°F.
+2. Peel/chop vegetables if necessary, toss with olive oil, salt and pepper, and cook according to chart
+uhs.berkeley.edu/cookwellberkeley
+If you want to cook healthy meals, here are a few important general techniques
+to get you started.
+Vegetable Minutes
+Soft or thin (zucchini, bell peppers, asparagus, green beans) 10-20
+Tomatoes 15-20
+Crucifers (broccoli, cauliflower, Brussels sprouts) 15-25
+Onions 30-45
+Root (carrots, beets, potatoes) 30-45
+Winter squash (butternut, acorn, spaghetti) 20-60
+Cleaning Cast Iron
+1. After cooking: Wipe still-warm skillet with towel to remove excess food and oil.
+Rinse under hot water and scrub with a non-metal brush to remove food. Avoid
+soap .Sprinkle with kosher salt and scrub if necessary.
+2. Dry thoroughly: Heat over medium-low until all moisture is gone.
+3. Season: Coat with about ½ teaspoon of oil and rub over surface. Recommended
+oils: flaxseed, sunflower, soybean, canola.
+Healthy Cooking Cheat Sheet
+uhs.berkeley.edu/wellness
+wellnessfacstaff@berkeley.edu
+Making Soup
+1. Base: onion, celery and carrot (mirepoix – aromatic vegetables that give subtle background flavor
+to soups, stews, braises; usually 2 parts onion to 1 part carrot and 1 part celery). Other aromatics:
+mushrooms, parsnips, leeks, peppers, tomatoes, garlic. Holy trinity (Louisiana dishes): bell pepper
+instead of carrot. Sweat with a little fat.
+2. Spice: Pinch to teaspoon; cumin (earthy, most soups), Thai (fresh garlic and ginger, ground
+coriander), Indian (cumin, turmeric, fenugreek, garam masala), Mexican/Spanish (paprika)
+3. Stock: homemade or store bought
+4. Thicken (Optional): peeled medium potato, spoonful of flour before adding stock, handful of split
+red lentils
+5. Main ingredient: Veggies
+6. Blend (or not)
+7. Garnish: green onion, chopped herbs, croutons, black pepper, drizzle of cream
+Sauté – Cooking food quickly in minimal fat over relatively high hat.
+1. Heat pan over medium heat until hot
+2. Add fat, swirl to coat bottom of pan, 10-30 seconds
+3. Add whatever you’d like to sauté, but don’t crowd pan (single layer)
+4. Toss and turn. For tender veggies or bite-sized meat – stir frequently but not constantly. For dense
+veggies – stir every few minutes so they don’t fall apart. For portion-size meat, turn once per side
+to reduce sticking.
+Sharpening Knives
+• Saves time and keeps you safe – dull knives slip.
+• Test: try cutting a piece of paper
+• Hack for small knives – use bottom of unglazed ceramic mug for small knives
+• Honing – Do weekly. Doesn’t sharpen, just keeps the knife straight.
+• Wood cutting boards are best for not dulling knives, followed by plastic. Glass is too hard.
+• Storage – keeps knives away from each other. Store in a block or magnetic strip.
+Vinaigrette
+• 1 part vinegar (acid) + 3-4 parts oil
+• Other seasonings – salt and pepper. Mustard- tangy. Miso- mellow, sweet-salty. Fresh herbs-
+brightness. Garlic/shallots-pungent
+• Storage: Basic vinaigrette- countertop. Fresh ingredients- refrigerate up to 5 days.
+Saute – hot pan, hot oil. So simple, yet the biggest mistake I see with cooks.
+
+Sear – hot pan, hot oil, seasoned food item, even caramelization on all sides, usually done over med-high heat.
+
+Braise – cooked at low/moderate heat with liquid. Most often these are cooking project style dishes, but braising can be done in under an hour depending on what’s  braising.
+
+Roast – dry heat cooking, temperature & time depend on what’s in the oven
+
+Boil  – big, rough bubbles at a high heat.
+
+Simmer – low bubbles that hardly break the surface, gentle, medium heat or lower
+
+Reduce – cook something at a simmer, uncovered, to concentrate and thicken a liquid
+
+Julienne – long thin strips. Usually about 3″-4″ long an 1/4″ wide or less if you want to get technical, but perfection isn’t really the point here.
+
+Small Dice – you want things to be as uniform as possible so they all cook the same, small dice is about 1/4″ square.
+
+Medium Dice – 1/2″ square,
+
+Large Dice – 1″-ish. Consistently the same size is more important that the actual size
+
+Mince – chopped up very fine
+
+Beef/Pork Cooking Temperatures
+
+    Rare 120-125 degrees
+    Medium Rare 130-135 degrees
+    Medium 140-145 degrees
+    Medium Well 150-155 degrees
+    Well 160 + degrees
+
+Poultry Cooking Temperature  always to minimum of 165 degrees
+
+Weights & Measures – scaled weights are more precise than the volume measures below. If a recipe calls for scaled measures (I use hardly any that do) use a scale, and vice versa, if a recipe is written for volume measures you cannot easily convert to scaled. For example – 1 cup of flour weighs about 5oz, not 8oz.
+
+    3 tsp = 1 Tbsp
+    2 Tbsp = 1oz
+    8oz = 1 cup
+    16oz = 2 cups = 1 pint
+    32oz = 4 cups = 1 quart
+    64oz = 8 cups = 2 quarts = 1/2 gallon
+    128oz = 16 cups = 4 quarts = 1 gallon
+C++ is a high-level programming language. It was developed in 1983 by Bjarne Stroustrup at Bell Labs. It is used for developing various applications.
+Basic Structure of C++ Programs
+
+// Header files
+#include<bits/stdc++.h>
+
+// std namespace contains 
+// various standard library components
+using namespace std;
+
+// main function is the starting 
+//point of program execution
+int main() {
+  
+    // This is the section where 
+    // we write code statements
+    return 0;
+}
+
+Comments
+
+Comments in C++ are used for providing an explanation of the code that makes it easier for others to understand the functionality of the code. They are not executed by the compiler. Comments can also be used to temporarily disable specific statements of code without deleting them.
+
+There are two types of comments:
+
+1. Single-lined
+
+We use two forward slashes // to indicate the single-line comment. For example,
+
+// This is a comment
+
+
+2. Multi-lined
+
+We use  /* to start a multi-line comment and */ to end it. For example,
+
+/* This is multi-lined comment.
+The below statement will print GeeksforGeeks.*/
+
+Variables
+
+In C++, a variable is a container used to store data values:
+
+    Variables must be declared before they can be used.
+    Multiple variables can also be declared at one time.
+    The name of a variable can contain alphabets, digits, and an underscore but the name of a variable must start with an alphabet or an underscore.
+
+    Identifiers: All variables in a program must be given unique names which are known as the identifiers so each variable can be identified uniquely.
+
+    Constants: Constants are the fixed values that remain unchanged during the execution of the program.
+
+Syntax
+
+// Declaring a single variable
+data_type var_name;
+
+// Declaring multiple variables
+data_type var1_name, var2_name, var3_name;
+
+Data Types
+
+Data types are the type of data that a variable can store in a program.
+1. Integer
+
+    It is used to store integers.
+    Integers take 4 bytes of memory.
+
+Example
+
+int var = 123;
+
+2. Character
+
+    It is used to store characters.
+    It takes 1 bytes of memory.
+
+Example
+
+char var = 'a';
+
+3. Floating Point
+
+    It is used for storing single-precision floating-point numbers.
+    It takes 4 bytes of memory.
+
+Example
+
+float num = 1.23;
+
+4. Double
+
+    It is used to store double-precision floating point numbers.
+    It takes 8 bytes of memory.
+
+Example
+
+double num = 1.2345;
+
+5. Boolean
+
+    It is used to store logical values that can be either true or false.
+
+Example
+
+bool b = false;
+
+6. String
+
+    A string is a collection of characters surrounded by double quotes. The string data type is used to store words or sentences.
+    The string data type is part of the Standard Library and is defined in the <string> header file.
+    We have to include <string> header file for using string class.
+
+Example
+
+string str = "GeeksforGeeks";
+
+Input and Output
+
+1. Input from user: We can take input from the user using cin from the iostream library. For example,
+
+int var;
+cin >> var;
+
+2. Output on the console: We can print output on the console using cout from the iostream library. For example,
+
+cout << “Hello World”;
+
+New Lines
+
+We can use \n character or endl to insert a new line. For example,
+
+cout << "Hello World! \n";
+cout << "Hello World!" << endl;
+
+Conditional Statements
+
+Conditional statements allow us to control the flow of the program based on certain conditions. It helps us to run a specific section of code based on a condition.
+1. The if statement
+
+If statement executes a block of code if and only if the given condition is true.
+Syntax
+
+if (condition) {
+    // Code to be executed if the condition is true
+}
+
+2. Nested if statement
+Syntax
+
+if (condition1) {
+    // Code to be executed
+    if (condition2) {
+        // Code to be executed
+    }
+}
+
+3. The if-else statement
+
+In if-else statement, condition inside the if statement is true, then the code inside the if block will get executed, otherwise code inside the else block will get executed.
+Syntax
+
+if (condition) {
+    // Code to be executed 
+    // if the condition is true
+} else {
+    // Code to be executed 
+    // if the condition is false
+}
+
+4. The else-if statement
+
+The else if statement allows you to check for multiple conditions sequentially.
+Syntax
+
+if (condition1) {
+    // Code to be executed 
+    // if condition1 is true
+} else if (condition2) {
+    // Code to be executed if 
+    // condition1 is false and 
+    // condition2 is true
+} else {
+    // Code to be executed if 
+    // all conditions are false
+}
+
+5. Shorthand if else (Ternary Operator)
+
+Shorthand if else also known as the Ternary operator (?:) works just like if-else statements that can be used to reduce the number of lines of code.
+Syntax
+
+(condition) ? expression1 : expression2;
+
+Condition inside round brackets () is true, expression1 will be evaluated and it will become the result of the expression. Otherwise, if the condition is false, expression2 will be evaluated and it will become the result.
+6. Switch statement
+
+The switch statement evaluates the expression and compares the value of the expression with the cases. If the expression matches the value of any of the cases, the code associated with that case will be executed.
+7. Break and Default
+
+The break keyword is used to exit the switch statement when one of the cases matches, while the default keyword, which is optional, executes when none of the cases match the value of the expression.
+Syntax
+
+switch (expression) {
+    case value1:
+        // Code to be executed if 
+        // expression matches value1
+        break;
+    case value2:
+        // Code to be executed if 
+        // expression matches value2
+        break;
+    // ...
+    default:
+        // Code to be executed if 
+        // expression does not match any case
+        break;
+}
+
+    Note: Default keywords is used with switch statements.
+
+Loops
+
+Loops are used to repeatedly execute a block of code multiple times.
+Types of Loops
+1. For Loop
+
+For loop helps us to execute a block of code a fixed number of times.
+
+Syntax:
+
+for (initialization expr; test expr; update expr) {
+    // body of the for loop
+}
+
+2. While Loop
+
+While loop repeatedly executes a block of code till the given condition is true.
+Syntax
+
+while (condition) {
+   // statements
+   update_condition;
+}
+
+3. Do-While Loop
+
+Do-while loop also executes the block of code till the condition is true but the difference between a while and a do-while loop is that the do-while executes the code once without checking the condition and the test condition is tested at the end of the loop body.
+Syntax
+
+do {
+    // Body of do-while loop
+} while (condition);
+
+Arrays
+
+An array is a data structure that allows us to store a fixed number of elements of the same data type in contiguous memory locations.
+
+Syntax:
+
+dataType array_name[size];
+
+where,
+
+    data_type: Type of data to be stored in the array.
+    array_name: Name of the array.
+    size: Size of array.
+
+Example
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+int main() {
+
+  
+
+    // Declare and initialize an array of strings
+
+    string fruits[] = {"Apple", "Banana", "Orange", "Grapes"};
+
+​
+
+    // Access and print each element of the array
+
+    for (int i = 0; i < 4; i++) {
+
+        cout << "Fruit at index " << i << ": " << fruits[i] << endl;
+
+    }
+
+​
+
+    return 0;
+
+}
+
+
+Output
+
+Fruit at index 0: Apple
+Fruit at index 1: Banana
+Fruit at index 2: Orange
+Fruit at index 3: Grapes
+
+Multi-Dimensional Arrays
+
+Multi-dimensional arrays are known as arrays of arrays that store similar types of data in tabular form.
+
+Syntax:
+
+data_type array_name[size1][size2]....[sizeN];
+
+where size1, size2,…, sizeN are size of each dimension.
+
+2-Dimensional arrays are the most commonly used multi-dimensional arrays in C++.
+Example
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+    // Declaration and initialization of a 2D array
+
+    int arr[3][4] = { { 1, 2, 3, 4 },
+
+                      { 5, 6, 7, 8 },
+
+                      { 9, 10, 11, 12 } };
+
+​
+
+    // Accessing elements in the 2D array
+
+    // Output: 1
+
+    cout << "Element at arr[0][0]: " << arr[0][0] << endl;
+
+    // Output: 7
+
+    cout << "Element at arr[1][2]: " << arr[1][2] << endl;
+
+​
+
+    // Changing the value of an element
+
+    // Output: 20
+
+    arr[2][3] = 20;
+
+    cout << "Modified element at arr[2][3]: " << arr[2][3]
+
+         << endl;
+
+​
+
+    // Nested loops for iterating through the 2D array
+
+    for (int i = 0; i < 3; i++) {
+
+        for (int j = 0; j < 4; j++) {
+
+            cout << arr[i][j] << " ";
+
+        }
+
+        cout << endl;
+
+    }
+
+​
+
+    return 0;
+
+}
+
+
+Output
+
+Element at arr[0][0]: 1
+Element at arr[1][2]: 7
+Modified element at arr[2][3]: 20
+1 2 3 4 
+5 6 7 8 
+9 10 11 20 
+
+Vectors
+
+Vectors are a dynamic array-like data structure that stores elements of the same data type in a contiguous fashion that can resize itself automatically unlike arrays which mean vectors can grow when an element is inserted or shrink when an element is deleted.
+
+    Vectors are present in C++ Standard Template Library (STL).
+    We have to #include <vector> header file in our C++ program to use vectors.
+
+Syntax:
+
+vector<data_type> vector_name;
+
+Commonly used Vector Functions
+
+        push_back() - It is used to insert the elements at the end of the vector.
+        pop_back() - It is used to pop or remove elements from the end of the vector.
+        clear() - It is used to remove all the elements of the vector.
+        empty() - It is used to check if the vector is empty.
+        at(i) - It is used to access the element at the specified index 'i'.
+        front() - It is used to access the first element of the vector.
+        back() - It is used to access the last element of the vector.
+        erase() - It is used to remove an element at a specified position.
+
+Example:
+
+#include <iostream>
+
+#include <vector>
+
+using namespace std;
+
+int main()
+
+{
+
+    // Create an empty vector
+
+    vector<int> numbers;
+
+​
+
+    // push_back()
+
+    numbers.push_back(10);
+
+    numbers.push_back(20);
+
+    numbers.push_back(30);
+
+​
+
+    // Accessing elements using at()
+
+    // Output: 10
+
+    cout << "Element at index 0: " << numbers.at(0) << endl;
+
+    // Output: 20
+
+    cout << "Element at index 1: " << numbers.at(1) << endl;
+
+​
+
+    // front() and back()
+
+    // Output: 10
+
+    cout << "First element: " << numbers.front() << endl;
+
+    // Output: 30
+
+    cout << "Last element: " << numbers.back() << endl;
+
+​
+
+    // pop_back()
+
+    // Remove the last element
+
+    numbers.pop_back();
+
+​
+
+    // erase()
+
+    // Remove the element at index 1
+
+    numbers.erase(numbers.begin() + 1);
+
+​
+
+    // empty()
+
+    if (numbers.empty()) {
+
+        cout << "Vector is empty" << endl;
+
+    }
+
+    else {
+
+        cout << "Vector is not empty" << endl;
+
+    }
+
+​
+
+    // clear()
+
+    // Remove all elements
+
+    numbers.clear();
+
+​
+
+    if (numbers.empty()) {
+
+        cout << "Vector is empty" << endl;
+
+    }
+
+    else {
+
+        cout << "Vector is not empty" << endl;
+
+    }
+
+​
+
+    return 0;
+
+}
+
+
+Output
+
+Element at index 0: 10
+Element at index 1: 20
+First element: 10
+Last element: 30
+Vector is not empty
+Vector is empty
+
+References and Pointers
+References
+
+References provide an alias for an existing variable. We can manipulate the original value using the reference variable. The reference variable is declared using & operator.
+
+Example
+
+int var= 12;
+// A reference variable to var
+int& ref= var;
+
+where, ref is a reference to var variable.
+Pointers
+
+A pointer is a variable that stores the memory address of another variable. It can be created using the * operator and the address of another variable can be assigned using the address-of operator &.
+Example
+
+int i = 3; 
+// A pointer to variable i or "stores the address of i"
+int *ptr = &i;
+
+Functions
+
+Functions are the reusable block of a set of statements that performs a specific task. Functions can be used to organize the logic of the program.
+Syntax for function declaration
+
+return_type function_name(parameters);
+
+Syntax for function definition
+
+return_type function_name(parameters) {
+     // function body
+    // code to be executed
+    // return statement (if applicable)
+}
+
+    return_type: It is the data type of the value that a function returns.
+    function_name: It is the name of the function.
+    parameters: parameters are the input values provided when the function is called. parameters are optional.
+
+Example
+
+Program to add two numbers.
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+​
+
+// Function declaration
+
+int sum(int a, int b);
+
+​
+
+// Function definition
+
+int sum(int a, int b) {
+
+    return a + b;
+
+}
+
+​
+
+int main()
+
+{
+
+    // Function call
+
+    int result = sum(3, 4);
+
+      cout << result;
+
+}
+
+
+Output
+
+7
+
+Explanation: The function sum takes two integers as parameters and returns the sum of the two numbers. The return type of the function is int. The parameters of the function are two integers that are 3 and 4. The returned value 7 is stored in the variable result.
+String Functions
+
+There are several string functions present in Standard Template Library in C++ that are used to perform operations on strings. Some of the commonly used string functions are:
+1. length() Function
+
+Returns the length of a string.
+Example
+
+string str = "GeeksforGeeks";
+cout << "String length: " << str.length();
+
+2. substr() Function
+
+It is used to extract a substring from a given string.
+Syntax
+
+string substr (size_t pos, size_t len) const;
+
+    pos: Position of the first character to be copied
+    len: Length of the sub-string.
+    size_t: It is an unsigned integral type.
+
+Example
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+int main()
+
+{
+
+    string str = "GeeksforGeeks";
+
+​
+
+    // Extracts a substring starting from
+
+    // index 1 with a length of 5
+
+    string sub = str.substr(1, 5);
+
+​
+
+    cout << "Substring: " << sub << endl;
+
+​
+
+    return 0;
+
+}
+
+
+Output
+
+Substring: eeksf
+
+3. append() Function
+
+Appends a string at the end of the given string.
+Example
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string str = "Geeksfor";
+
+​
+
+    str.append("Geeks");
+
+​
+
+    cout << "Appended string: " << str << endl;
+
+​
+
+    return 0;
+
+}
+
+
+Output
+
+Appended string: GeeksforGeeks
+
+4. compare() Function
+
+It is used to compare two strings lexicographically.
+Example
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string str1 = "Geeks";
+
+    string str2 = "for";
+
+    string str3 = "Geeks";
+
+    
+
+    int result1 = str1.compare(str2);
+
+    cout << "Comparison result: " << result1 << endl;
+
+​
+
+    int result2 = str1.compare(str3);
+
+    cout << "Comparison result: " << result2 << endl;
+
+    
+
+    return 0;
+
+}
+
+
+Output
+
+Comparison result: -31
+Comparison result: 0
+
+5. empty() Function
+
+It is used to check if a string is empty.
+Example
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+​
+
+int main() {
+
+    string str1 = "GeeksforGeeks";
+
+    string str2 = "";
+
+​
+
+    if (str1.empty())
+
+        cout << "str1 is empty" << endl;
+
+    else 
+
+        cout << "str1 is not empty" << endl;
+
+​
+
+    if (str2.empty()) 
+
+        cout << "str2 is empty" << endl;
+
+    else 
+
+        cout << "str2 is not empty" << endl;
+
+    return 0;
+
+}
+
+
+Output
+
+str1 is not empty
+str2 is empty
+
+Math Functions
+Function	
+
+Description
+	
+
+Example
+min(x, y)	Returns the minimum value of x and y.	cout << min(10, 20);
+max(x, y)	Returns the maximum value of x and y.	cout << max(10, 20);
+sqrt(x)	Returns the square root of x.	cout << sqrt(25);
+ceil(x)	It rounds up the value x to its nearest integer.	double ceilX = ceil(3.14159);
+floor(x)	It rounds the value of x downwards to the nearest integer.	double floorX = floor(3.14159);
+pow(x,n)	It returns the value x raised to the power of y	double result = pow(3.0, 2.0);
+Object-Oriented Programming
+
+Object-oriented programming generally means storing data in the form of classes and objects.
+Class and Objects
+
+    Class: A class is a user-defined data type that contains its data members and member functions. A class is a blueprint for objects having similar attributes and behavior.
+    Objects: An object is an instance or a variable of the class.
+
+Pillars of OOPs
+1. Encapsulation
+
+Encapsulation is wrapping up the data and methods together within a single entity. In C++, classes are used for encapsulation.
+2. Abstraction
+
+Showing only the necessary details and hiding the internal details is known as abstraction.
+4. Inheritance
+
+Deriving the properties of a class ( Parent class ) to another class ( Child class ) is known as Inheritance. It is used for code reusabilty.
+
+Types of Inheritance:
+
+    Single Inheritance: When a derived class inherits the properties of a single base class, it is known as Single Inheritance.
+    Multiple Inheritance: When a derived class inherits the properties of multiple base classes, it is known as Multiple Inheritance.
+    Multilevel Inheritance: When a derived class inherits the properties of another derived class, it is known as Multilevel Inheritance.
+    Hierarchical Inheritance: When more than one derived class inherits the properties of a single base class, it is known as Hierarchical Inheritance.
+    Hybrid (Virtual) Inheritance: When we combine more than one type of inheritance, it is known as Hybrid (Virtual) Inheritance. Example: Combining Multilevel and Hierarchical inheritance.
+
+3. Polymorphism
+
+Providing different functionalities to the functions or operators of the same name is known as Polymorphism.
+
+C++ provides two types of polymorphism:
+
+    Compile-time Polymorphism can be achieved using:
+        Operator overloading
+        Function overloading
+    Runtime Polymorphism can be achieved using:
+        Function overriding
+        Virtual Functions
+
+4. Inheritance
+
+Deriving the properties of a class (Parent class) to another class (Child class) is known as Inheritance. It is used for code reusability.
+
+Types of Inheritance:
+
+    Single Inheritance: When a derived class inherits the properties of a single base class, it is known as Single Inheritance.
+    Multiple Inheritance: When a derived class inherits the properties of multiple base classes, it is known as Multiple Inheritance.
+    Multilevel Inheritance: When a derived class inherits the properties of another derived class, it is known as Multilevel Inheritance.
+    Hierarchical Inheritance: When more than one derived class inherits the properties of a single base class, it is known as Hierarchical Inheritance.
+    Hybrid (Virtual) Inheritance: When we combine more than one type of inheritance, it is known as Hybrid (Virtual) Inheritance. Example: Combining Multilevel and Hierarchical inheritance.
+
+File Handling
+
+File handling means reading data from a file and manipulating the data of a file.
+File Handling Operations
+
+    1. Open a file: We can use open() member function of ofstream class to open a file.
+
+    2. Read a file: We can use getline() member function of ifstream class to read a file.
+
+    3. Write to a file: We can use << operator to write to a file after opening a file with the object of ofstream class.
+
+Example:
+
+#include <fstream>
+
+#include <iostream>
+
+#include <string>
+
+​
+
+using namespace std;
+
+​
+
+int main()
+
+{
+
+    ofstream outputFile("example.txt");
+
+​
+
+    // Open the file for writing
+
+    outputFile.open("example.txt");
+
+    if (outputFile.is_open()) {
+
+​
+
+        // Write data to the file
+
+        outputFile << "Hello, World!" << endl;
+
+        outputFile << 42 << endl;
+
+        outputFile.close(); // Close the file
+
+    }
+
+    else {
+
+​
+
+        // Failed to open the file
+
+        cout << "Error opening the file for writing."
+
+             << endl;
+
+        return 1;
+
+    }
+
+​
+
+    // Reading from a file
+
+    ifstream inputFile("example.txt");
+
+    if (inputFile.is_open()) {
+
+        string line;
+
+        while (getline(inputFile, line)) {
+
+            // Print each line
+
+            cout << line << endl;
+
+        }
+
+        // Close the file
+
+        inputFile.close();
+
+    }
+
+    else {
+
+​
+
+        // Failed to open the file
+
+        cout << "Error opening the file for reading."
+
+             << endl;
+
+        return 1;
+
+    }
+
+​
+
+    return 0;
+
+}
+
+This C++ cheat sheet can serve as a reference guide for programmers that provides quick access to concepts of C++.
+Perhaps you've only ever used prebuilt desktops, or relied on a laptop. But if you always thought that building your own desktop PC was beyond you, take heart: If you have the confidence to wield a screwdriver and follow basic instructions, you can do it. Indeed, putting together a PC these days is not entirely unlike assembling IKEA furniture. The most rewarding part is that, unlike with that blondwood bookcase, you get to select the right parts to go together and make it your own.
+Completed Build
+(Credit: Joseph Maldonado)
+
+You can find plenty of PC building guides and videos on the internet. Our aim with this one is to provide you with the context you need to select each component and put your purchases together. Specific part selection we'll leave to our library of deep-dive guides, referencing them as we go. As for the actual PC assembly, you can watch the video above or follow blow-by-blow below as we build a well-equipped mainstream gaming PC with all the trimmings.
+PCMag logo
+You May Also Like
+Snapdragon X…in a Desktop?! A Look at Two New Lenovo Mini PCs, Inside and OutSnapdragon X…in a Desktop?! A Look at Two New Lenovo Mini PCs, Inside and Out
+
+PC building is infinitely varied, so no guide can cover every scenario. But we'll cover the most common issues you'll face assembling a desktop in 2023. You may decide to go fancier or more budget-focused with your build, but you'll walk away with a great grounding in what you need to know to do the job with confidence. 
+Completed Build PC
+Yes, you can do this. (Credit: Joseph Maldonado)
+Choosing the Key Components
+
+Today, PC builders are spoiled with such a wealth of handsome, modestly priced PC cases, mood lighting options, and color-coordinated components that it's easy to get pulled into a design challenge or passion project when all you wanted to do was build a simple desktop. To be sure, there's a hot-rodder element here: You may pay a slight premium for your parts versus buying a pre-built PC. Major PC makers enjoy economies of scale buying parts in bulk or designing some of their own components that you as a solo builder can't attain. But most of the time, if you price out the parts for your own build against the cost of a ready-made system, you should get pretty close.
+Parts assortment
+The parts assortment we'll use for our sample build (Credit: Molly Flores)
+
+In selecting components, where do you start? The interplay of the parts you put into your PC is crucial, both in terms of compatibility (some things won't fit if you don't choose the right bits, others will fit but won't work) and suitability to task. We'll run through the key components part by part, point you to plenty of help for each piece, then discuss building concerns based on our basic gaming PC. The job at its core consists of mounting things in a box, so let's start with a few words about the container: the PC case or chassis.
+The PC Case
+
+The case you buy sets the tone for your whole PC build. A big case allows plenty of room for drives, giant graphics cards, and maximum-size motherboards; smaller cases fit into space-constrained environments or entertainment centers. The chassis you choose is intertwined with your motherboard choice and sometimes your PC's power supply.
+
+Do you mean to sit your PC case under your desk, on your desk, or in a niche in a bookcase or wall unit? Cases come in lots of shapes and sizes: traditional tower and midtower (usually between 15 and 22 inches tall); flatter "desktop" cases designed to lie on their sides (think of a stereo receiver); highly compact cases built for minimalist configurations. In some ways, the parts discussed below can dictate the kind of case you need. Alternately, your case can dictate the parts you select.
+
+Every PC case lists the motherboard formats it supports. The three main layouts are ATX (a full-size, mainstream motherboard), MicroATX (a smaller variant with fewer expansion slots and other surface-area-related features), and Mini-ITX (even smaller, usually offering just a single slot for a video card). You'll see a few outliers like XL-ATX and Extended ATX (EATX), which are bigger than ATX, but first-time builders should ignore these.
+
+Most cases that support a given motherboard format will also allow smaller ones—most ATX cases, for example, can accept MicroATX and Mini-ITX motherboards. That said, it's smart to match your case's size class with your motherboard so you're not wasting space.
+
+Materials vary widely. You'll still find boring beige steel (though the default hue these days tends to be black), but even cheap cases can have flair such as side-panel windows to show off your handiwork. Indeed, cases with one or more tempered-glass sides have become very popular and affordable.
+
+If you're buying a PC case without a side window or much in the way of bling, you may not care, but it's possible these days to purchase PC components that complement a case's interior or exterior. A case with a blackout-painted interior might contrast nicely with a motherboard that has a white or red printed circuit board (PCB) or highlights. It's possible to visually coordinate a PC build if you're interested in the showcase aspect of building; in fact, the sky's the limit if you want to get into that groove.
+Corsair 4000D Airflow
+The Corsair 4000D Airflow case (Credit: Molly Flores)
+Corsair 4000D Airflow
+Another view of our chassis (Credit: Molly Flores)
+
+Our build uses Corsair's 4000D Airflow, a midtower chassis for ATX builds. You'll learn plenty more about it as we build. (For more about buying a PC case, see our roundups of the best PC cases and the guides to towers and Mini-ITX cases linked above.)
+The Motherboard
+
+Veteran PC builders will argue that the motherboard should be the first thing you select in a PC build, and all else will flow down from there. They're not wrong. Essentially your PC's backbone or foundation, the motherboard is very much tied into all your other component choices.
+
+The nuances of motherboard shopping are many, but basically come down to three things: (1) You need a motherboard that works with the CPU you choose; (2) the board should be the right size and shape ("form factor") for your case; and (3) it should have the external ports and internal expansion slots you need for what you plan to install.
+
+On the first front, the key factors are the motherboard's socket type and its chipset (the latter is its built-in core operating silicon). These dictate which processors you can install and how you can take advantage of the overall platform. For new motherboards for a first-time builder, the relevant sockets are those that fit with the latest mainstream Intel and AMD CPUs: Intel Socket LGA 1700 and AMD's AM4 and AM5 for Intel Core and AMD Ryzen chips respectively. The newer AM5 houses the very latest Ryzen parts, but AM4 remains relevant for budget buyers given the huge range of still-available and economical Ryzen CPUs that work with it.
+
+Your local electronics mart may also offer motherboards with other sockets for high-end desktop (HEDT) systems: Intel's Socket LGA 2066 for the Core X-Series and AMD's TR4/sTRX4 for Ryzen Threadripper CPUs. There's nothing stopping you from selecting one of these, but these motherboards and processors are expensive—at the extremes, very expensive—and only make sense for certain power users or professional content creators.
+
+As noted, the motherboard's chipset dictates the CPUs it works with, the level of supporting features the board has, and where it fits in the range of boards available for a given chip.
+Asus Prime B660-Plus D4
+Asus Prime B660-Plus D4 motherboard (Credit: Molly Flores)
+
+For our build, we're using an Asus Prime B660-Plus D4 motherboard. The B designates it a second-from-the-top platform for Intel 12th and 13th Generation CPUs. Top-end Intel boards use chipsets that start with Z; high-end AMD boards have chipsets that start with X. Both makers use a B series as their second tier. Check out the links below for much more on these distinctions; finding the best motherboard is among the most complicated aspects of PC part shopping.
+The CPU and the CPU Cooler
+
+You choose a CPU in concert with your motherboard; one must support the other. As with motherboards, the considerations when choosing a processor are complex and tied into what you can afford and what you'll use your PC to do, as well as aspects like power consumption and cooling. The relevant CPU lines today are Intel's 11th through 13th Gen Core and AMD's Ryzen 5000 and 7000 series. 
+
+We're skipping over very low-end CPUs like Intel's Celeron and Pentium and AMD's Athlon. There's nothing intrinsically wrong with these chips, but if you're going to the effort of building a PC, you should save enough to afford at least a modest mainstream Core or Ryzen CPU. If your budget's too tight, buy a pre-built consumer system and take advantage of the manufacturer's economies of scale.
+Intel Core i7-13700K
+Intel Core i7-13700K processor (Credit: Molly Flores)
+
+For our sample build, we chose the Intel Core i7-13700K, our current top pick for gaming processors and an excellent choice for productivity and content creation as well. These 13th Gen Intel chips tend to run hot, and you'll likely want a liquid cooling system rather than just a heatsink or fan for this processor. The K suffix indicates that the chip is overclockable, but even if you don't overclock, liquid is the way to go.
+Corsair H100i Elite
+Corsair H100i Elite liquid cooling kit (Credit: Molly Flores)
+
+Some lesser (non-K) chips in Intel's 13th Gen line come with a CPU cooler that will suffice for them. But we've selected an aftermarket Corsair H100i Elite all-in-one liquid cooler. (For deep dives into buying the right processor and our current top picks, see our guides to the best CPUs and best CPUs for gaming, plus our guide to finding the right CPU cooler.)
+The Memory Kit
+
+Depending on the CPU and motherboard you buy, you'll need DDR4 or DDR5 memory. You'll want to check your motherboard's peak memory speeds, and if you're a performance hound buy a memory kit that works hand-in-hand with that motherboard support near the top of the range. Intel motherboards support a technology called Extended Memory Profiles (XMP), an auto-overclocking and -optimization scheme to sync your memory and your motherboard. Look for XMP settings in common between your memory kit and the board in question. AMD recently introduced a similar scheme that works with its Ryzen 7000 AM5 platform dubbed AMD Expo.
+
+How much memory to get depends on your usage case and your budget. Today's barest of bare minimums for a Windows desktop is 8GB, with 16GB or 32GB easily attainable at current RAM prices. For a mainstream build, you'll want a matching pair of memory modules so you can take advantage of dual-channel memory speeds. (Mixing and matching different speeds and brands memory is not recommended.) For higher-end systems, you may want four modules; some Threadripper and Core X platforms can support as many as eight.
+
+If you have a side-windowed case, some memory modules have RGB lighting or other decorative extras. A more important thing to look for is compatibility with what's known as the QVL (qualified vendor list) for a given motherboard. Check the list of modules tested with your motherboard by the latter's manufacturer. It doesn't mean other modules won't work fine, but it's an added bit of assurance when you're purchasing. Some memory makers such as Crucial and Kingston provide advice on what memory works with a given motherboard.
+Corsair Vengeance RGB RS
+Corsair Vengeance RGB RS (32GB) memory kit (Credit: Molly Flores)
+
+Our build uses a Corsair Vengeance RGB RS kit of 32GB (two 16GB modules), with a peak memory speed of 3200MHz. (For more about the nuances of memory, including specs related to memory speeds, latency, and capacity per module, see our guide to how to pick the right RAM.)
+The Storage: SSDs and Hard Drives
+
+You can go a bunch of directions with your PC's storage subsystem these days, but the smart default pick with new motherboards is a solid-state boot drive in the M.2 format supporting PCI Express data transfers. Stick-of-gum-sized M.2 drives save space inside your chassis, reduce cable clutter, and provide access to the high-speed PCI Express (abbreviated PCIe) bus. PCI Express 4.0 drives have emerged as the high-end performance standard these days.
+
+You can still, of course, install an old-school platter hard drive, which costs much less per gigabyte than an SSD. Chances are, however, you won't need more than 2TB of storage, so should stick with SSDs. If you need 8TB or 10TB or more of mass storage, opt for hard drives, since mainstream solid-state drives top out at 4TB and are expensive at that capacity.
+Corsair MP600
+Corsair MP600 M.2 SSD (Credit: Molly Flores)
+
+Our build uses a 2TB Corsair MP600 M.2 PCI Express boot drive for the Windows operating system and applications, plus a 3.5-inch hard drive to give 8TB of secondary storage on the cheap. (For details on buying the right drives and our current top picks, see our guides to the best M.2 drives and best internal SSDs.)
+The Power Supply
+
+We'll get into the different sizes of power supply unit (PSU) later on, but you'll want to use an online web calculator such as the invaluable PCPartPicker to determine the minimum PSU wattage you'll need based on the other parts you're installing. The CPU and graphics card you choose have the biggest bearing on power requirements.
+
+We'll also talk later about modular, semi-modular, and fixed-cable power supplies. All you need to know right now is that when shopping, you must match or exceed the total minimum wattage for the components you're installing, and the form factor of the power supply needs to match that of your PC case.
+Corsair RM750e
+Corsair RM750e modular power supply (Credit: Molly Flores)
+
+For this build, we've chosen a Corsair RM750e modular power supply, which should provide plenty of power for the rest of our components and let us plug in just the cables we need for neatness' sake. It uses the ATX form factor, more about which later. (For more on the topic, see our guide to PC power supplies.)
+The Graphics Card
+
+Everyday tasks like word processing, spreadsheeting, and online browsing are fine with the integrated graphics built into most CPUs, but if you plan on gaming or running demanding content creation software or workstation apps, you'll need a dedicated graphics card with its own GPU (graphics processing unit). It's a complex component to shop for, but basically comes down to whether you play games, which monitor you own, and how much you can afford. (If you do decide to stick with your processor's integrated graphics, be sure your motherboard has video outputs—not all do!—so you can connect your monitor.)
+
+Be prepared to make an investment: Graphics-card prices have skyrocketed since the late 2010s, when crypto mining boosted demand and the pandemic crimped supplies. It's key not to overbuy. You want to weigh your target resolution based on your monitor, the latter's peak refresh rate, and the type of games you play. (Recent gaming monitors support very high refresh rates, supporting high-end GPUs that can deliver gameplay at hundreds of frames per second.) You'll also need to consider the space available inside your chassis; recent high-end graphics cards from Nvidia and AMD are frankly enormous, 10 inches or a foot long and two or three expansion slots wide.
+
+AMD's Radeon and Nvidia's GeForce are the two big GPU brands, and both offer high-end cards for gameplay on monitors up to 4K resolution. We selected a not-quite-top-of-the-line GeForce RTX 4070 Ti card. Cards based on this GPU start around $600 and are powerhouses for playing games at high detail and image-quality settings at 1440p and to a lesser extent 4K.
+PNY GeForce RTX 4070 Ti
+PNY GeForce RTX 4070 Ti graphics card (Credit: Molly Flores)
+
+This particular card is manufactured by PNY, but many other makers offer RTX 4070 Ti cards with slightly different designs and cooling schemes. All should be in roughly the same performance ballpark, however. Decent mainstream GPUs these days start at around $300, with mostly older models for basic 1080p gaming in the $100 to $200 range. (For more on the topic and our current top picks, see our guide to the best graphics cards.)
+Some Extra Bits: Six RGB Fans, and an Internal USB Hub
+
+Our Corsair case has several preinstalled 120mm cooling fans and the liquid cooler has two of its own. But we decided to go all in on RGB lighting and replace them all, adding two three-packs of RGB fans with each pack including a multiport RGB controller. (We only need to use one of the controllers.) The kits are Corsair's SP120 RGB Elite.
+
+Each fan has two cables—one for RGB, one for power and control—and the controller will bundle all the RGB cables under one component roof. Four of the fans go on the chassis (three up front as intakes, one in the back as an exhaust), while the other two will replace the plain-vanilla fans on the CPU cooler's radiator. The case fans will attach to the motherboard, and the radiator fans will attach to a cable cluster included with the liquid cooler.
+Corsair SP120 RGB Elite
+Corsair SP120 RGB Elite triple-fan kits (Credit: Molly Flores)
+
+Also part of our build is an unusual accessory: an internal USB header hub. Our motherboard has two built-in USB 2.0 headers, but our build will need three (for the RGB controller, the Wi-Fi card, and the CPU liquid cooler). So this splitter of sorts (Corsair's Internal 4-Port USB 2.0 Hub) costs about $25 and adds more USB 2.0 header connectors to the case.
+Corsair Internal 4-Port USB 2.0 Hub
+Corsair Internal 4-Port USB 2.0 Hub (a special accessory our build needs) (Credit: Molly Flores)
+The Parts List and the Pricing
+
+So here we have a breakout of all the components we've chosen, along with pricing links to find them. As you can see, our sample build totaled up to just over $2,000 street price at the time we published this story.
+
+Before we get started with our build, a word about the approach we're going to take. With its Intel Core i7-13700K CPU and Nvidia GeForce RTX 4070 Ti GPU, this desktop represents a well-equipped performance and gaming system as of mid-2023. You can go further upscale or opt for economy with almost any of the parts, but most of the installation considerations will remain the same. The big differentiator in terms of the physical install is the CPU and how you cool it. As we said, this Intel chip is best paired with liquid cooling, so we'll demonstrate that process but also discuss less exotic air cooling.
+
+You've probably noticed that the lion's share of parts in our PC build are from Corsair, a company that makes a wide range of DIY gear including PC cases, power supplies, SSDs, CPU coolers, and memory kits. In fact, the components in our specific configuration are available in a bundle that Corsair sells as the Corsair Elite Build Kit. We're using these parts as they represent a good mainstream gaming desktop at this writing, but you can swap in or out any number of other components from other makers and in most cases have an identical or very similar installation process. In any event, the installation manuals for the exact parts you select should supersede our instructions whenever there is a conflict. 
+Performing the PC Build, Blow by Blow
+1. Gather Your Tools
+
+You might be able to get by with a screwdriver from your junk drawer, but if you're spending a bunch on a new PC, get a nice tool kit to go with it. You'll use it for not only this project plus upgrades down the road, and there's no law that a PC tool kit has to be used only with PCs. (Eyeglass repair and around-the-house fixes, anyone?)
+Corsair Tool Kit
+In a PC tool kit, look for a good mix of magnetic screwdriver bits, especially Phillips heads. (Credit: Molly Flores)
+
+Look for a good screwdriver set with an assortment of Phillips and regular bits both large and small. Pay particular attention to the Phillips assortment, since you'll be installing an M.2 solid-state drive which will require at least one bit for tiny screws. It's smart to opt for magnetic screwdriver bits (but keep them clear of your hard drives if any). Also look for a shaft extender for when you need to reach a screw blocked by tall components such as a CPU cooler or graphics card. Never use power tools like electric screwdrivers or drills which can easily overtighten and damage components.
+
+The biggest mechanical part of PC building involves all the screws you'll need to manage. Consider a magnetic parts tray, like the ones auto mechanics use but on a much smaller scale. Such a tray, available at home stores or retailers like MicroCenter, will help you keep track of and sort the multiple screw sizes you'll handle in any PC build (and, like your tool kit, come in handy for non-PC purposes). If you want to keep things cheap, a dollar-store pill sorter also works well.
+Magnetic parts tray
+An under-$5 magnetic parts tray is a useful pickup. (Credit: Joseph Maldonado)
+
+The next item is a bit controversial: a grounding strap. Most computer-specific tool kits include one. Whether you use it depends on your tolerance for risk, plus where you're building (both in your home and on the planet).
+
+Touching a PC component while you're electrically charged can transfer static to it, which may be harmless but can be damaging. I've never killed a part due to static to my knowledge, but I live in the temperate Northeast U.S. and build PCs on wood and tile floors. If you work in the high desert of New Mexico on shag carpet and like to wear woolly sweaters, you definitely need a grounding strap! As a middle ground, one option is to plug in your new PC power supply on your workbench and touch the chassis periodically to dispel any charge you might be carrying. 
+Grounding strap
+A grounding strap (Credit: Joseph Maldonado)
+
+If you do decide to use a grounding strap, you must clip it to something that reaches the ground; that same plugged-in power supply will do if you can safely clip the strap to a portion of the metal chassis. Don't shove the strap's alligator clip into any PSU openings or grilles, and be careful not to knock over any delicate components with the strap's leash as you work.
+
+Also protect the surface on which you work. If you're building your PC on a piece of furniture whose finish you care about, put down a towel, pad, or other soft layer to protect the surface. Think, too, about the PC case; you'll need to lay it on its sides to complete the build, and a soft layer will protect it from getting scratched by a rough workbench.
+
+If your chassis has one or more glass sides, make sure you have a place to stow these panels safely after detaching them. (I've broken my share of glass sides over the years; learn from my pain.) Put the side panels back in the box, buffered by packing foam, instead of leaving them balanced on edge somewhere you might accidentally kick them over.
+
+In the same vein, work somewhere free of clutter, with plenty of space to spread out parts. You'll need good lighting, and definitely want to keep the space free of food or drinks. Mark my words: That soda can will hit your grounding strap the instant you reach for something, and Pepsi and motherboards don't mix.
+Liquids at PC build
+Nope, nope, nope! No drinks while building! Not even one! (Credit: Joseph Maldonado)
+
+Two final (optional but handy) tools: a book light or other small clip-on light and your smartphone. Use the latter's camera to photograph areas of the motherboard and blow them up for easier viewing. A magnifying glass can help if you don't have eagle eyes.
+
+Tools assembled? Let's grab two essential parts—the motherboard and the CPU—and get building.
+2. Install the CPU on the Motherboard
+
+Take the motherboard out of its box and anti-static bag. (Grounded yourself first, yes?) Place it in front of you on your soft towel or perhaps a big mouse pad. You can also use the motherboard box itself.
+Asus Prime B660-Plus D4
+The Asus Prime B660-Plus D4 motherboard out of the box (Credit: Molly Flores)
+
+As mentioned, we're using an Asus motherboard compatible with Intel's 12th and 13th Generation Core processors with a CPU socket known as LGA1700. LGA stands for land grid array and indicates that the contact pins between the motherboard and the CPU are mounted in the socket. AMD processors until recently used a PGA array—nothing to do with golf but a pin grid array in which the pins reside on the processor and fit into a perforated socket on the motherboard.
+
+Whether LGA or PGA, be exceedingly careful with both motherboard and processor and double that caution wherever the pins are involved. It's incredibly easy to bend the pins in a socket or on a chip and it can take DIY microsurgery to fix the damage, if it's fixable at all. Take great care with this step to avoid regret later.
+
+On one side of the motherboard's CPU socket, you'll see a load lever held in place by spring tension. A black plastic protective square covers the socket. Depress and pull aside the load lever and let it rise, releasing the retention frame over the CPU socket ...
+CPU socket load er
+Raising the load lever on our LGA1700 board (Credit: Joseph Maldonado)
+
+That exposes the hundreds of pins inside the socket. (Look but don't touch!) Now survey the socket for a small arrow indicator in one corner (or possibly on the retention frame or the cover you just removed). Determine which corner the arrow indicates. Hold that thought.
+
+Now, unbox your processor. Our Core i7 comes in a retail box with a small plastic clamshell holding the chip. Snap it open and lift the chip out by its edges, taking great care not to touch the underside—you don't want to leave skin oil, peanut butter, or anything on the contacts. Examine the top of the chip, specifically the circuit board peeking out around the edge of the thicker metal die, and you should see an arrow in one corner. Orient the chip so the arrow matches that in the socket corner you found earlier.
+Matching the arrow
+The corner arrow can be hard to see, so look closely. (Credit: Joseph Maldonado)
+
+Note that the chip has notches around the edges (two edges, in the case of this Core i7-13700K) ...
+Intel Core i7-13700K
+Notches are evident on the top and bottom edge. (Credit: Molly Flores)
+
+With the arrows lined up, these notches should align with nibs in the socket that will engage them. Lower the CPU into the socket parallel to the board. Alternately, you can line up the bottom edge and lower the chip from a 45-degree angle down to flat, but don't depress or mash the pins in any way. The CPU should fit in place perfectly without any force—if you have to push, you're doing it wrong. If the CPU seems off-kilter or not perfectly flat, gently remove it and try again, checking that you got the orientation right.
+CPU in place
+The CPU properly positioned (Credit: Joseph Maldonado)
+
+Let me repeat: Don't Force Anything! Do Not! If the CPU does not engage properly, the orientation or something else isn't right. Never, ever press a CPU into a socket. Chances are, you'll damage the pins and end up sad, mad, and possibly broke.
+
+Assuming your processor is lying flat and all looks well, give the CPU the gentlest of left-to-right wiggles to ensure it's perfectly seated. Be gentle! The chip should not budge a millimeter. Once you're confident the CPU is properly seated, you'll want to snap the plastic cover off the retaining frame. The plastic typically hooks to the frame and takes a little working or wiggling to get it off.
+LGA1700 CPU socket cover
+Removing the socket's protective cover (Credit: Joseph Maldonado)
+
+Set it aside. Next, lower the retention frame over the processor to a near-closed position, then depress the load lever into its original position.
+LGA1700 socket lever lowering
+Lowering the load lever; it will exhibit spring tension (Credit: Joseph Maldonado)
+
+Unlike most steps, this action will require some force, perhaps a bit more than seems comfortable. It should be a steady press. If anything doesn't look right, such as the top of the CPU (the silver heat spreader) not aligning perfectly with the opening in the retention frame, stop and double-check the seating of the processor. The lever should slide under its retaining hook and hold the frame closed under tension. Congratulations! You've successfully installed your CPU.
+LGA1700 Socket CPU install complete
+CPU install: Everything looks good! (Credit: Joseph Maldonado)
+
+Before we move on, let's take a brief detour to look at the installation scheme for other common CPU sockets, in case you're not using a late-model Intel chip.
+Alternative CPU Installation: AMD Ryzen AM4 and AM5
+
+If you have an AMD Ryzen CPU and motherboard, how you install the former will vary depending on whether the latter is an older AM4 board or one of the new Ryzen 7000 platforms that uses the AM5 socket.
+Ryzen 7000 AM5 processor
+An AMD Ryzen 7000-series AM5 processor (Credit: Joseph Maldonado)
+
+AM4 chips (and older legacy AMD processors) have pins on the underside ...
+A typical AMD AM4 chip
+A typical AM4 chip: Pins on the bottom, holes in the AM4 socket (Credit: Joseph Maldonado)
+
+The principles with AM4 and AM5 are generally the same as we outlined for Intel's LGA1700: Release the tension lever alongside the socket, raise the retention frame, pop off the protective cover, find the matching arrow, and align your processor with the arrow before dropping it into the socket.
+Installing an AM5 processor
+Installing an AM5 processor is much the same job as for Intel LGA1700. (Credit: Joseph Maldonado)
+
+The carved-out notches and protrusions around the CPU and socket edges will be slightly different, but the principles are the same: Take your time and force nothing.
+
+This is especially true of AM4 processors with their delicate pins. Never place these chips face down anywhere but in their plastic carrier or in a socket, and for heaven's sake don't drop them. Dozens of bent pins and salty tears will follow.
+Alternative CPU Installation: AMD Ryzen Threadripper
+
+You're not likely to be building a Ryzen Threadripper system; these are for high-end workstation users and design pros who need loads of CPU cores at the expense of everything else. They're also not ideally suited to first-time builders. Still, building around a Threadripper CPU isn't radically different, though the install is more complex.
+
+Ryzen Threadripper processors come with a small torque wrench that you use to open and close the motherboard socket, known as sTRX4 with the latest silicon. The socket has three star screws, and you follow an etched pattern on the socket or its cover to loosen the screws in a certain order to release the retention frame. Once the latter lifts up, you may need to press a pair of levers inside the socket to raise an additional guide frame underneath ...
+AMD Ryzen Threadripper socket with load frame raised
+AMD Ryzen Threadripper socket with load frame raised (Credit: Joseph Maldonado)
+
+The Threadripper chip itself comes in an orange plastic carrier. Slide the chip (in the carrier) down through the CPU socket's guide frame until it reaches the bottom. Be sure the orange plastic portion engages properly with the tabs on the inside of the frame.
+AMD Ryzen Threadripper socket loading
+AMD Ryzen Threadripper socket CPU loading (Credit: Joseph Maldonado)
+
+Then lower the frame gently, making sure it aligns with the sTRX4 socket, and depress the levers to hold the chip down.
+AMD Ryzen Threadripper socket load frame locking
+AMD Ryzen Threadripper socket: Locking down the load frame (Credit: Joseph Maldonado)
+
+The outer retention frame then gets screwed down, with screws tightened in reverse 3-2-1 order, until the torque tool indicates enough turns. Again, follow the instructions on the socket. 
+AMD Ryzen Threadripper socket: Screwing shut the socket
+AMD Ryzen Threadripper: Screwing shut the socket frame (Credit: Joseph Maldonado)
+Alternative CPU Installation: Intel Core X-Series
+
+One final variant is the Intel Core X-Series HEDT processor. This CPU socket is known, in its latest iteration, as LGA2066 and operates like any recent Intel socket with the exception that it has two tensioning levers, one on either side ...
+Intel Core X-Series LGA2066: Dual tensioning levers
+Intel's Core X-Series LGA2066 socket has dual tensioning levers. (Credit: Joseph Maldonado)
+
+You need to release the levers and reseat them in a certain order that will be obvious once you try it:
+Intel Core X-Series LGA2066 Levers
+The levers on a Core X LGA2066 socket must be raised and lowered in a specific order. (Credit: Joseph Maldonado)
+3. Install the Memory on the Motherboard
+
+Let's move on. Some experienced PC builders will argue that the remaining steps should be done with the motherboard mounted inside the PC case; depending on the chassis and components you've chosen, that may be true. (Some cases have better clearance or room inside than others.) For this build, however, we'll perform the next two steps outside the case for visibility and ease of access.
+
+Our new desktop uses DDR4 memory. Some late-model Intel motherboards still use DDR4, while others use the newer DDR5 standard. All AMD Ryzen 7000 boards with the AM5 socket use DDR5; AM4 boards use DDR4. Any given motherboard supports only one or the other memory type. Both types come in the form of sticks called DIMMs (dual inline memory modules).
+Corsair Vengeance RGB RS
+Corsair Vengeance RGB RS DIMMs: Note the notches in the contact edge. (Credit: Molly Flores)
+
+Look closely at your DDR4 modules. You'll see a notch on the edge of the contacts. Match that notch with the keying inside the motherboard memory slots; the DIMMs will install only one way. Before you install them, however, check your motherboard manual to see the optimal installation arrangement given the number of modules you have. 
+Asus Prime B660 Manual
+Checking the Asus Prime board's manual for optimal DIMM placements (Credit: Joseph Maldonado)
+
+Most mainstream boards will have four DIMM slots, two of which you're probably filling. Don't pick just any slots; your motherboard manual will tell you which ones to use. (Ditto if you're using just one memory module or four modules in an eight-slot Core X or Threadripper platform.) Oftentimes you'll be using the second and fourth slot away from the CPU socket, but sometimes board makers throw a curveball.
+
+The DIMM sockets on the motherboard will have a lever either at one end or on both ends. Lower one or both levers on the slots you'll use ...
+Lowering the DIMM slot levers on Asus Prime B660
+Lowering the DIMM slot levers on the Asus Prime B660-Plus D4 board (Credit: Joseph Maldonado)
+
+Then insert the module parallel to the board, and press firmly with a thumb at either end. The module should click into place, and the levers rise and engage the notches at either end.
+Aligning the DIMM with the notch in the board
+Align the DIMM with the notch in the board. (Credit: Joseph Maldonado)
+Pressing the DIMM into place
+Press the DIMM into place, with a thumb at either end, until it clicks. (Credit: Joseph Maldonado)
+
+If you don't hear a good click, the DIMM is not in properly; tug a little to see if it comes loose. An improperly seated DIMM is a common cause of boot failure for new builders. 
+Memory DIMMs installed on Asus Prime B660
+The memory modules successfully installed on our Prime B660-Plus D4 (Credit: Joseph Maldonado)
+
+Installing DDR5 memory works the same way; the DIMM notch is just positioned differently to keep you from putting DDR5 in a DDR4 slot or vice versa. As above, check the modules' optimum slot placement in the manual and double-check their seating when you're done.
+DDR4 and DDR5 DIMMs
+A Corsair DDR4 module (top) and a Crucial DDR5 module (bottom): Note the different notch positions. (Credit: Joseph Maldonado)
+4. Install the M.2 SSD on the Motherboard
+
+Hard drives aren't extinct, but M.2 solid-state drives are today's default boot drives. An M.2 SSD looks like a stick of gum with microchips on both sides and plugs directly into an M.2 slot on your motherboard. Check your motherboard manual for the M.2 slot that has direct access to the CPU (usually, but not always, the one closest to the CPU socket). The other M.2 slots are connected by what's known as the platform controller hub or PCH; for the best performance, you want your boot drive in the slot directly connected to the CPU M.2 slot.
+Asus Prime B6660 M.2 Slot
+The M.2 slot we'll use on the Asus Prime B660-Plus D4 is covered by a silver heatsink. (Credit: Molly Flores)
+
+Our Corsair MP600 is a PCI Express NVMe SSD. An M.2 slot on a motherboard might work with one of two buses, PCI Express or Serial ATA (SATA). The latter is a legacy choice but may still be a factor with older boards or drives. (Some boards may have an M.2 slot or two that supports both interfaces.) Furthermore, depending how old the board is, the PCIe slots may support different versions of PCI Express. You want to sync your SSD's capabilities to its motherboard slot for best performance; later versions of PCI Express enable higher peak data transfer rates. PCI Express 5.0 is very new; it has the fastest potential speeds, but the first PCIe 5.0 drives are just reaching the market at this writing and require the newest, highest-end motherboards. Most modern SSDs are PCI Express 3.0 or 4.0 models; you'll probably want to match up a PCIe 4.0 SSD with a 4.0-capable slot.
+
+Once you've determined the slot to use, you'll find it may be open or covered with a heatsink or heat spreader. The latter may look like part of the board decor that you'll need to unscrew and remove, as on our Asus board ...
+Installing the M.2 SSD: Removing the Asus Prime B660 M.2 Heatsink
+Installing the M.2 SSD: First, remove the Asus Prime B660 M.2 heatsink. (Credit: Joseph Maldonado)
+
+The SSD may have a heat spreader of its own, in the form of a thin surface strip or a larger superstructure with its own heatsink. The latest SSDs tend to run hot, so you want to pay special attention here. We suggest using the motherboard-integrated heat spreader unless the drive you buy comes with a more robust one installed. If it has a graphene or other thin heat strip on it, you can leave that in place under a motherboard-provided heat spreader like ours.
+Installing the M.2 SSD: The Corsair MP600
+The Corsair MP600 M.2 SSD we'll be installing, with a view of the M.2 slot below it (Credit: Joseph Maldonado)
+
+Depending on the motherboard, installing an M.2 drive can be a little finicky, requiring a couple of different screws and screwdriver tips. Remove any heat spreader over the M.2 slot you will use. Most aftermarket desktop SSDs are 80mm long (also called Type-2280). Check that there is a standoff (a little screw-in mount) at the Type-2280 position on the board; if not, you may need to fish it out of the motherboard box and install it or reposition an existing standoff. The standoff may have a tiny screw on top, or you may need to find that in the box. Either way, remove the micro-screw or have it on hand. In our case, the screw is integrated into the heatsink.
+
+Insert the M.2 SSD at a shallow angle, minding the notch in the slot and in the drive. You should hear a click, and if you let it go, the SSD should stand up at approximately 45 degrees under spring tension.
+Installing the M.2 SSD
+Installing the M.2 drive: Match the notch, and mind the angle. (Credit: Joseph Maldonado)
+
+If yours is a separate-screw design, get the teeny screw on the magnetic tip of a small Phillips bit, press down the SSD, and screw the drive down onto the standoff. Of course it's easy for this minuscule screw to fly off into a crevice or onto the rug. A few recent boards have swiveling latches in place of these screws. Bully for you if your motherboard is one!
+Installing the M.2 SSD: The M.2 Mounting Point
+Holding down the M.2 SSD under spring tension (Credit: Joseph Maldonado)
+
+If you're using a SATA rather than PCIe M.2 drive, you may note two notches in the edge of the SSD but just one in the slot. As mentioned, some slots have dual SATA/PCIe support. As long as you're sure where you're plugging in your SSD, this is fine. 
+
+One thing to note before you install the SSD and any heatsink cover: If there is a thermal pad below it on the motherboard, peel off any plastic protector before installing the drive. (The pad is usually a little bit sticky.) Likewise, on the underside of the heatsink cover that's part of the motherboard, there will usually be a pad with a plastic strip covering it. Peel it off before reinstalling the heatsink cover.
+Installing the M.2 SSD: Peeling Off the Heat Pad
+Don't forget to peel the protective layer off the M.2 thermal pad! (Credit: Joseph Maldonado)
+
+The whole point is for the thermal pad to make good contact with the surface of your SSD to keep it cool. In our case, the cover install is the reverse of removal, and the screw for the heatsink cover also holds down the drive.
+Installing the M.2 SSD: Reattaching the Heat Sink
+Reattaching the motherboard heatsink over the SSD (Credit: Joseph Maldonado)
+
+Okay, let's get the motherboard inside the case!
+5. Mount the Motherboard in the Case
+
+The PC we're building a full-size motherboard in the ATX form factor. Depending on the case you picked, you might be dealing with a motherboard of a different size. See the image below ...
+Mini-ITX, MicroATX, and full ATX motherboard sizes
+Size comparison: Mini-ITX, MicroATX, and full ATX motherboards (left to right) (Credit: Joseph Maldonado)
+
+ATX is the most standard size motherboard for a tower or minitower PC. MicroATX is the next size down, suited to midsize chassis (some small towers, some other shapes). MicroATX boards tend to be the most cost-effective. The smallest popular board type, Mini-ITX, is strictly for very compact (dubbed small-form-factor or SFF) desktops, and these boards have premium prices. They also have just one main PCI Express expansion slot for a graphics card.
+
+Let's install our ATX board. Assuming your case is a typical midtower like ours, remove both of its side panels. With this case, you remove two thumbscrews on each panel and pop off the sides with your thumbs, like so ...
+Opening the Corsair 4000D Airflow
+Opening the Corsair 4000D Airflow chassis takes all thumbs. (Credit: Joseph Maldonado)
+
+If either side has a glass panel, put it somewhere safe. Place the chassis on its side, with the big cavity that will take the motherboard facing up. The case will contain a jumble of cables connected to the front panel; route these aside so they're out of the way. You don't want any cables trapped under the board when you mount it.
+
+Inside the case, you'll see either preinstalled bits of metal with threaded holes (standoffs) or holes for installing such standoffs...
+Corsair 4000D Airflow: Standoffs
+Evaluating the preinstalled standoffs inside the case. Note the big rectangle cutout for motherboard-underside access for the CPU cooler bracket. (Credit: Joseph Maldonado)
+
+Look at your motherboard and match the pattern of holes on the board to the standoffs or standoff holes in the motherboard tray. If no standoffs are preinstalled, you'll need to install them in the same pattern in the case as on your motherboard. If standoffs are preinstalled, you need to make sure one is installed for each hole in the board and (this is important!) that no standoffs are installed where there isn't a matching hole in the motherboard.
+Corsair 4000D Airflow: Motherboard Tray
+A closeup of the standoffs. Make sure you have one per motherboard hole. (Credit: Joseph Maldonado)
+
+If your case doesn't have preinstalled standoffs, one time-tested trick is to get a large sheet of paper, cut it to the size of your motherboard, and use a pencil to trace the position of holes through the motherboard onto it.
+Tracing the motherboard holes on an Asus Prime B660
+Tracing the motherboard holes on our Asus Prime B660. This is an easy shortcut for matching up the holes on the case and board. (Credit: Joseph Maldonado)
+
+You can then position the paper inside the case and install standoffs or verify their positions by punching through the guide holes in the paper.
+Paper in the Corsair 4000D Case
+Punching through the paper to find the guide holes. Don't just guess! (Credit: Joseph Maldonado)
+
+For an ATX board, you're looking at eight or nine holes; a MicroATX platform may have seven or eight, and Mini-ITX will have fewer. If you need to remove any standoffs that are preinstalled, use pliers. Some PC cases come with a hexagonal Phillips screwdriver bit in the accessory box to help you install or remove standoffs.
+
+Every PC case includes packets of screws for various mounts; many come with three or four screw types used for motherboard mounting, fastening drives to cages, and more. Check your manual for the specific kind to use with the standoffs to mount the motherboard and sort them into your parts tray. Dry-fit one or two to make sure that you're using the proper screws; different types may look similar but not fit.
+
+Before installing the board, you may have an additional step to do depending on its design. The motherboard box may contain a plate called the I/O shield or RF shield. It fits into the rectangular cutout in the back of the case and serves as a pass-through panel for the motherboard ports. Some modern motherboards incorporate the I/O shield into the board itself, attached to the ports cluster. But if the shield is a separate part, snap it into place now, right-side-up relative to the ports.
+Installing the I/O Plate into the Corsair 4000D Airflow
+Position the I/O shield in the case and make sure it's right side up relative to the motherboard ports. (Credit: Joseph Maldonado)
+
+The I/O shield installs from the inside of the case, as you can see.
+Installing the I/O plate
+Take care when installing the I/O plate—it's sharp! (Credit: Joseph Maldonado)
+
+Sometimes the shields are sharp-edged metal, giving you a better chance of cutting yourself here than in any other step. Getting the shield to snap into place usually takes some force at the corners, one by one.
+Installing the I/O plate in Corsair 4000D Airflow
+Press each corner in turn to snap the I/O shield into place. (Credit: Joseph Maldonado)
+
+Once the plate is installed (it should pop when it snaps in), test-fit the motherboard to make sure the ports poke and show through the I/O shield properly.
+I/O Plate in Corsair 4000D Airflow
+Check that the ports show through the shield properly, with no metal tabs from the I/O shield inside any port. (Credit: Joseph Maldonado)
+
+Finally, position the board with the ports facing the I/O shield and be extra careful not to trap any cables under it. Lower the board carefully into place. Don't scratch it on the standoffs, and check that you have a clear view into each port through the I/O shield if the latter was installed as a separate piece.
+
+It's very easy to trap one of the tensioning tabs of the I/O shield inside an Ethernet, HDMI, or USB port, and you'll need to disassemble the PC to fix it if that happens. The port will be unusable or worse.
+Installing the Asus Prime B660 motherboard
+Lowering the board into the case. Avoid scratching the underside and align the holes in the board with the standoffs. (Credit: Joseph Maldonado)
+
+Each mounting hole in the motherboard should align with a standoff in the case.
+Installing the Asus Prime B660 in the Corsair 4000D Airflow
+Voila! The mounting holes line up with the standoffs. (Credit: Joseph Maldonado)
+
+Grab your magnetic screwdriver, a proper Phillips bit, and motherboard screws from the case kit and begin screwing the board into place. Start with the centermost screw, which will help the others line up, then do the far corners. (Sometimes the centermost screw position is actually a peg, which makes things easier.) Once you get the first few screws in, the rest should be easy. If the screws don't catch but simply rotate, you're using the wrong ones.
+Installing the Asus Prime B660 in the Corsair 4000D Airflow
+Screw the motherboard onto the standoffs at each of the mounting points. (Credit: Joseph Maldonado)
+
+Once you've got a few screws in place, tip up the case and check that you have easy access to the rear of the motherboard through the CPU cutaway in the tray. You'll note we haven't talked about installing the CPU cooler yet, and in most builds you'll need access to the back of the motherboard to do that—you may need to install a bracket or plate behind the board. Almost all modern cases have generous openings to the four mounting holes around the CPU socket from beneath, but it never hurts to check before you get too far.
+
+With the screws in place and the motherboard secure, the next step is the case wiring. These wires are fine and hard to access later in the build, so we'll get them out of the way here. Fetch your monocle or magnifying glass.
+6. Connect the Case Cables to the Motherboard
+
+You'll need steady hands and patience for this step. All the cables we're going to install now are part of the PC chassis. These vary from case to case, but a few are universal: the cables for your front-panel USB ports, the front-panel audio jack or jacks, and the case's switches and LEDs.
+The Corsair 4000D Airflow's front-panel connectors
+The Corsair 4000D Airflow's front-panel connectors (Credit: Molly Flores)
+
+Let's tackle the trickiest ones first: the cables for what's called the front-panel header, a dense cluster of pins usually found on one edge of the motherboard. Depending on your case, you'll have two to four items to plug in here, broken up in different ways. First, find the front-panel header layout in your motherboard's manual (sometimes indicated in a diagram or on the board as FP_HEADER) and locate it on the board. The manual will show a little grid of what pin on the header performs what function, along with a schematic of how to plug in the relevant cables.
+Front panel header guidance in the manual for Asus Prime motherboard
+Front-panel header guidance in the manual for our Asus motherboard (Credit: Joseph Maldonado)
+
+Expect a cable for the power switch, which covers two pins, and possibly a power LED cable, which may be split into two tiny leads of one pin each. Also common are a hard drive LED lead and a reset switch lead. Each of these connects to a pin or pins in the front-panel header cluster. Run all of these cables behind the motherboard tray as best you can to have them emerge near the front-panel header pin cluster.
+Newsletter Icon
+Get Our Best Stories!
+Get the Most Out of Your Technology
+Tips, Tricks, and How-To Newsletter Image
+
+Sign up for the Tips, Tricks, and How-To newsletter for all of our best expert advice.
+
+By clicking Sign Me Up, you confirm you are 16+ and agree to our Terms of Use and Privacy Policy.
+
+Let your manual be the guide to where you plug in these pin connectors. A key thing to know: Polarity matters for some of these connectors but not others. For the switches (power and reset), you can install the header cable in either direction on the two indicated pins, and it will work fine.
+Front panel header for Asus Prime B660
+The front-panel header cluster on our Prime motherboard is along the edge. (Credit: Joseph Maldonado)
+Front panel header for Asus Prime B660
+Plugging in the power switch header cable. The direction doesn't matter for this cable, so long as it's on the right two pins. (Credit: Joseph Maldonado)
+
+The LED connectors (drive activity and power), however, must be installed positive lead to positive pin and negative to negative.
+Front panel header for Asus Prime B660
+Plugging in the power LED header cables. Polarity matters here! (Credit: Joseph Maldonado)
+
+The cables should indicate which side is positive, and the manual should show you which of the two pins is positive. Nothing will break if you get it wrong, but the lights won't work. It will take some fine fingering to plug these cables in without yanking out the others, but be patient and use good lighting, such as from a clip-on book light or your smartphone flashlight. The zoom function on your phone's camera can help if your eyesight isn't 20/20.
+
+Some high-end motherboards come with blocks into which you plug your header cables, then plug the block into the motherboard. Asus is best known for what it calls Q Connectors, but other makers dabble with them. Really, every motherboard vendor ought to provide one, considering they probably cost about a dime to make, but most don't. Phooey.
+
+This task may make you question your commitment to building a PC, but if you get through it, rest assured that most of what's left is easier. Just make sure to guide and route the cables carefully and in a way that they won't get tugged on and dislodged. It's hard to get them back into place once the chassis is stuffed with hardware.
+
+On to the USB cables. Depending on your case, you'll almost certainly have two or three types of these: USB 2.0, USB 3.0, or USB 3.2. The front-panel USB 2.0 cable (probably just one of these) will be fed by a 10-pin block with one pin position blocked. It's used to power any USB 2.0 ports. Our case doesn't have one, but many do; if yours does, route it to any of the USB 2.0 headers on the motherboard. (See the manual for their location; they may be labeled FP_USB.) On an ATX board, they're usually located along the bottom edge. Route the cable behind the motherboard tray to emerge from the nearest cutout to the USB 2.0 header. Plug in the cable, checking that the blocked pin position matches the missing pin. Don't force anything.
+
+The same goes for the USB 3.0 cable and header. Most cases come with one of these; a few have two. Compared to the USB 2.0 connector, this is a much chunkier 20-pin plug with 19 pins and an empty 20th position.
+USB 3.0 cable on Asus Prime B660
+The 20-pin leader cable for USB 3.0 is the biggest one that comes off the case. (Credit: Joseph Maldonado)
+
+This cable tends to be stiff, tricky to route, and stressful on the board's socket. Install it in the USB 3.0 header socket on the motherboard per the manual. Plug it in evenly, as it's easy to bend the pins in this socket if you're careless. A keying notch on the connector should match a cutaway in the socket to guarantee you're installing it properly.
+Inserting USB 3.0 cable
+Plugging in the USB 3.0 cable. Slow but steady does it. (Credit: Joseph Maldonado)
+
+The newest of the USB trio is the USB 3.2 cable; if you haven't built a PC recently, it may look unfamiliar. The cable is usually associated with a USB Type-C port on the front of the case. Some motherboards, especially older or cheaper ones, may not have one of these sockets, keeping you from using that USB-C port unless you buy a third-party converter cable.
+USB 3.2 header cable on Asus Prime B660
+The USB 3.2 header cable for the case's USB Type-C port (Credit: Joseph Maldonado)
+
+The socket on the motherboard looks a little bit like an ordinary external USB port. Check the manual, route the cable to the closest access point to the connector, and plug it in. You should get a mild click. This cable installs in either direction; it's not keyed like other USB header cables are.
+Inserting USB 3.2 header cable
+Plugging in the USB 3.2 header cable (Credit: Joseph Maldonado)
+
+Now for the audio cable. This is used to power the case's headphone and microphone jack (or combo jack). The cable connector should be labeled HD Audio, and plugs into a matching HD Audio or FP_AUDIO header on the motherboard. A 10-pin connector, it looks like the USB 2.0 header but with a different pin blocked out ...
+HD Audio Cable for Corsair 4000D Case
+The HD Audio header cable is common across cases. (Credit: Joseph Maldonado)
+
+Don't force this connector onto anything that doesn't match its pinout! Note: If you have a very old PC case, this audio cable may have a now-disused connector labeled AC '97 or perhaps dual connectors for AC '97 and HD Audio. (You may also see the name "Azalia" associated with HD Audio on vintage gear.) Choose the appropriate one for your motherboard, but really anything to do with AC '97 means you should opt for a newer motherboard or case.
+HD Audio cable header install on Asus Prime B660
+Plugging in the HD Audio cable (Credit: Joseph Maldonado)
+
+A few motherboards come with a tiny case speaker in the box. This speaker has a header connector at one end on a pigtail and a small drum at the other. The drum generates beeps at bootup that can indicate error codes.
+Header mounted speaker
+A typical header-pin-mounted speaker module (Credit: Joseph Maldonado)
+
+Don't worry if you don't have one of these (they're a bit old-fashioned), but if you do, plug it in according to the pins indicated in the front-panel header section of your manual, near where you plugged in the case switches and LED at the start of this step.
+
+One last word on motherboard headers: You may see other header-pin bunches on your motherboard such as TPM headers, COM/serial-port headers, even (on older boards) FireWire headers. Never plug anything into a header unless you're 100% sure it's compatible with the device or component in question.
+7. Mount the CPU Cooler and Radiator
+
+This part of the build will vary the most according to whether you went with an AMD or Intel processor and with liquid or air cooling. Lots of factors in play here.
+
+We're installing an all-in-one (AIO) liquid cooler, which comes prefilled and assembled, in our Intel system. The Core i7-13700K CPU runs hot, and even though we won't be overclocking it, we prefer more thermal leeway for this chip than a typical air cooler would allow. We're also partial, in this glass-sided case, to the enthusiast flair that a liquid cooler and radiator will lend. But you don't have to go with liquid cooling; indeed, for most users, if a stock air cooler comes with the CPU, that cooler should suffice (as well as being cheaper than an aftermarket liquid cooler or premium air cooler). Your choice of air or liquid cooling comes down to your budget, the CPU in question, and (a secondary consideration) whether you want to show off a fancy liquid apparatus through a case side window.
+Corsair H100i Elite
+Corsair's H100i Elite AIO liquid cooler, the full parts kit (Credit: Joseph Maldonado)
+
+You may need to install a bracket from the underside of your motherboard to mount whatever cooler you use. The instructions that come with your specific cooler will vary from brand to brand, so we can't give universal advice for installing liquid coolers. In this case, the Corsair kit is pretty typical of the AIO liquid coolers out there, but remember that your manual trumps any of our generic advice. Most aftermarket coolers come with a variety of brackets and screws for various AMD and Intel sockets. Your first move should be to sort your parts and isolate the right ones for your CPU socket.
+Corsair H100i Elite
+Sorting out the H100i mounting hardware; our build needs LGA1700. (Credit: Joseph Maldonado)
+
+Our Corsair cooler is an all-in-one design with a radiator at one end connected via a pair of liquid-carrying hoses to a heatsink and pump assembly at the other. We sorted out the kit according to the parts required for the LGA1700 socket and put the rest aside. If you were installing this cooler on an AMD AM4 or AM5 socket, you'd use these other bits.
+Corsair H100i Elite
+These are the LGA1700 mounting bits we'll need. (Credit: Joseph Maldonado)
+
+First, install the motherboard bracket from under the CPU socket. This bracket will accommodate the mounting apparatus for the CPU heatsink assembly from the top side. You'll need to get access to the other side of your motherboard ...
+Corsair H100i Elite CPU cooler backplate
+The bracket from the H100i mounting kit inserts behind the motherboard through the holes around the CPU socket. (Credit: Joseph Maldonado)
+
+In this case, this underside bracket is used for any of several Intel socket types; you slide the mounting points to match the spacing of the holes on your motherboard and fit it through them so they poke out through the board and out the top around the CPU.
+Corsair H100i Elite CPU cooler backplate
+A closeup of the mounts on the backplate viewed from the rear (Credit: Joseph Maldonado)
+
+An adhesive pad on the bracket, which you peel to expose, will hold it in place. Next, the Corsair kit requires you to screw on four mounting posts from the accessory kit; it's on these posts that you'll later mount the heatsink. Flip over the case and install the four posts, finger tight, in the holes in the mounting bracket.
+
+Depending on the design of your case, you may want to install the radiator portion of the cooler before the heatsink or vice versa. We'll do the former, since the radiator is the clumsier half. First examine the design of the radiator. You'll want to determine an airflow path for your PC case. We're mounting the radiator inside the top of the case, with its two fans blowing through the radiator and out the top. In general, with a liquid cooling system, you want the fans to blow through the radiator and this airflow to exit the case, since that air will be heated by the liquid passing through the radiator.
+
+You'll also want to be cognizant of how the radiator tubes extend to the heat sink. Depending on your case and cooler designs, you may be limited in where you can actually place the radiator because of reach or fitment issues. Our 240mm-class radiator fits above the motherboard, and the hoses loop without kinking from there to the CPU socket. You can install the radiator with the hoses looping front to back or vice versa; make sure you test-fit which is a better arrangement before mounting.
+Corsair H100i Elite
+The Corsair H100i Elite radiator and heat pump/heatsink assembly (Credit: Joseph Maldonado)
+
+In this cooler's accessory kit are eight washers and long screws used to mount the two fans to the radiator. The radiator uses two fans that come in the kit; mount them to the inside of the radiator as shown, orienting the fans' cabling toward the inside of the case for easier routing and hiding. You'll want to feed these cables through to the right side of the case for routing and plugging in later.
+Corsair H100i Elite
+Attaching the first of the two 120mm fans to the AIO radiator; mind the cable position. (Credit: Joseph Maldonado)
+
+Do this before you mount the radiator. Important: The frame portion of the fan should touch the radiator; that's the exhaust side of the fan, so this orientation will pull air from inside the case and push it out this side of the fan through the radiator. 
+Corsair H100i Elite two fans
+Make sure the fan cables face inward for easy routing. (Credit: Joseph Maldonado)
+
+Also in the kit should be a host of short screws for mounting the radiator to the case. Once you have the radiator positioned ...
+Corsair H100i Elite
+Inserting the radiator/fan assembly inside the top of the case (Credit: Joseph Maldonado)
+
+... install it using the screws, attaching them through the outside of the chassis and into the screw holes on the radiator. Make sure you're using the screw holes in the radiator and not fitting screws between fins or into other crevices in the radiator. With our Corsair case, you can slide the radiator forward or back before fully tightening, as the screw "holes" are really slots in the case. Look for the best fitment and appearance and adjust as needed.
+Corsair H100i Elite Radiator Mounting
+Mounting the radiator through the case top. Locate the right screws in the cooler kit and slide the radiator to the optimal position as you go. (Credit: Joseph Maldonado)
+
+Now to mount the heatsink assembly on the CPU. You'll notice a plastic cap over the heatsink; Corsair, like most other makers of all-in-one coolers, pre-coats the heatsink with a patch of thermal paste. You can use this existing paste; there's no reason not to, unless you're an enthusiast overclocker with a favorite brand of thermal paste. If you mess up the pad or need to reinstall it, however, you'll need to clean it and reapply fresh paste.
+
+Right now, we're going to mount the cooler head on the socket. Corsair supplies screws that engage with the mounting posts; place the heatsink/pump assembly over the CPU and gently fit the four screws over the posts to hold it in place.
+Corsair H100i Elite Heatsink
+Position the heat pump/heatsink assembly over the four CPU socket mounts. (Credit: Joseph Maldonado)
+
+Once you're sure it won't fly off, tighten the screws in a crosswise fashion, corner to diagonally opposite corner, giving each screw an equal number of turns before moving on to the next. Don't tighten any all the way down right away; do five turns at a position before moving to the next and stop when the cooler is finger-tight. Don't over-tighten!
+Corsair H100i Elite Heatsink Screws
+Screwing down the heat pump assembly (Credit: Joseph Maldonado)
+
+With the CPU cooler in place, you'll need to install the fine cables for the CPU pump, the radiator fans, and any RGB lights that come off them all. (Ours has all of the above.) Depending on the design of your AIO cooler, it may have one or more cables, so you must identify them and look for the matching headers on the motherboard.
+
+The primary heatsink pump cable should go into the header on the motherboard called CPU_FAN (or AIO PUMP). A possible alternative may be called CPU_OPT. Follow your motherboard and cooler manuals here. If the CPU cooler has a separate connection for RGB lighting, that may need to go to an RGB or ARGB motherboard header depending on the cooler's design. If your motherboard doesn't have a matching header and the case doesn't have an RGB controller, you may need a third-party adapter or controller. Again, consult the manual.
+
+In the case of our Corsair liquid cooler, you get a cable cluster that plugs into the top of the cooler via a USB-C connector, with a hydra of header cables trailing off it. We plugged in one (a 4-pin connector) to CPU_FAN, and a USB 2.0 10-pin header went into one of the motherboard's two USB 2.0 connectors. We also hooked up the 4-pin male connectors of the two fans attached to the radiator to the two female 4-pin connections on the hydra-head.
+Corsair H100i Elite
+Connecting the cables for the H100i radiator fans to the cable cluster coming from the pump unit (Credit: Joseph Maldonado)
+
+Circling back to air coolers and stock coolers, if you opt to use the stock air cooler that comes in the box with your CPU, it should work with the bracket that's already preinstalled on your motherboard. Alternatively, it may come with a bracket that installs from the underside. If you're using a cooler that doesn't have thermal paste preapplied, you'll need to apply some. Use a high-quality paste or the one that comes with the cooler. A $5 or $10 tube can last for multiple applications if you need more.
+
+Different schools of thought apply to paste application: a pea-size blob in the middle, an X shape, a pattern like the five pips on a die or playing card, and so on. We vote for the pea-sized blob, spread thinly to an almost transparent layer over the whole heat spreader atop the CPU. A business card or old credit card works nicely here, if the tube of paste doesn't come with a little spatula for spreading.
+Applying thermal paste
+Applying thermal paste (Credit: Joseph Maldonado)
+Applying thermal paste
+Spreading the paste with a card works well. (Credit: Joseph Maldonado)
+
+Wipe off any excess, avoid spilling it over the edges, and don't overapply—the thinnest of layers should do. You can just let the pressure of the CPU cooler spread the blob itself, but in our experience that seldom achieves 100% coverage of the die. It's especially tricky with AMD Ryzen 7000 chips and their sculpted heat spreaders, which can trap paste in nooks and crannies. Less is more.
+
+Once you've applied the paste, the mounting scheme comes down to the specific cooler maker. If the mount involves screws in each corner, do like we did with our AIO cooler and install them in a criss-cross pattern, giving each screw a few turns before moving to the next. (If you go too far with one, you may have trouble getting the others in.) Some AMD AM4 mounts use a hook-and-latch system that's a little tricky. In essence, you hook one end of a tilting bracket onto a plastic mount on the motherboard, then manipulate the other end over an opposite-side protrusion and pull down a lever to clamp it into place.
+AMD CPU Cooler with Hook and Latch
+AMD AM4 cooler with hook and latch (Credit: Joseph Maldonado)
+
+It's mechanically simple, but sometimes a little tough to engage. Some AM4 stock and aftermarket coolers, however, require you to remove the plastic mounts from the motherboard and install an underside screw mount.
+AMD and Intel stock coolers
+Late-model AMD and Intel stock coolers (Credit: Joseph Maldonado)
+
+Intel stock coolers, like the Laminar coolers introduced with the LGA 1700 socket, use a sort of plunger mount that goes straight into holes in the motherboard. You insert four pegs in turn through holes in the motherboard and press a plunger atop each corner, expanding the pegs inside the holes and holding the cooler in place. In our experience, these either work great the first time or can be frustrating to get to engage.
+Intel Laminar
+Intel Laminar stock cooler for LGA1700 (Credit: Joseph Maldonado)
+
+Finally, if you're using an aftermarket CPU cooler of the tall (tower) type, be aware of the airflow direction and orientation of any fans you clip on it. Generally speaking, you want air to flow through the tower cooler to cool the fins, then out toward the back or top of the case and an exhaust fan. You want to orient the cooler appropriately and mount the fan on the cooler so the airflow is in the intended direction, with the fan blowing through the cooler, not just trying to pull air through it. As with the radiator fans we discussed earlier, airflow intake is from the open side of the fan, and exhaust is through the frame side. Arrows on the edge of the fan may indicate the airflow direction as well.
+Recommended by Our Editors
+Corsair iCUE Link
+PC Test Build: Corsair’s iCUE Link Slashes the Cabling From RGB Cooling
+Nvidia GeForce RTX 5090
+The Best Graphics Cards for 2025
+Motherboard assortment
+The Best Motherboards for 2025
+
+As with your AIO cooler, you'll need to plug your air cooler's fan into the motherboard. This will usually be just one cable (unless there's an RGB lighting element involved), with a CPU_FAN header connector keyed so you can only install the cable the correct way. Route it as best you can to hide it if your case interior will be visible.
+8. Install the Power Supply, and Plug In Its Cabling
+
+To this point, power has been a secondary thought. But now it's time to install the power supply unit (PSU), so this PC can get juiced.
+
+Just as motherboards come in different sizes, your power supply will use one of two PSU form factors. By far the most common is the ATX or PS/2 power supply, whose standard height and width (5.9 by 3.4 inches) conforms to the PSU mounting position of most PC cases. Note that ATX PSUs can, however, be different lengths, accommodated by different cases, so you need to match your case and power supply. Some cases have items that can be removed, such as drive cages, to extend the depth of the PSU mounting area if necessary.
+
+Some smaller PC cases employ a specialized power supply form factor called SFX, a compact design that requires higher power density. SFX PSUs are thus a bit more expensive for the same wattage. You may also encounter SFX-L, an SFX variant that's broadly similar but deeper front to back. Any case that supports SFX-L will support SFX, but not necessarily vice versa.
+
+SFX and ATX PSUs
+Size comparison: SFX (left) and ATX (right) power supplies side by side (Credit: Joseph Maldonado)
+
+If you're building an ATX tower or MicroATX system, you're almost certainly using an ATX power supply. These (like SFX supplies) come in three subtypes: fixed-cable, semi-modular, and fully modular. Fixed-cable PSUs have all the cables hardwired in place. When you take one out of the box, it will have a hydra-head of cables sticking out of one end. Whether you use them all or not, they all must get crammed into your case.
+
+A semi-modular supply has some fixed cables and some that plug into the end of the PSU via sockets. The fixed ones are cables you'll definitely use. Last, the modular type comes with all of its cables in a pouch; you plug only the ones you need into the end of the PSU box. That makes installation easier and cleaner.
+
+The Corsair RM850 power supply we’re using is fully modular, so the first step is to determine which cables we need to plug into the PSU. You'll want to do this before mounting the power supply, because access to its sockets will be a lot more limited afterward.
+Corsair RM750e Power Supply
+The body of our modular power supply (Credit: Joseph Maldonado)
+
+The immutable cables you will use are the 24-pin main power connector, one CPU power connector (some boards require two), and one or two PCI Express power leads for your graphics card, assuming you're installing one. Other cable types you may need are Serial ATA power if you're installing any SATA hard drives or other SATA-powered devices. (We will need one here.) Another possibility is a cable of 4-pin Molex connectors, mostly used for legacy devices. We won't need those here.
+
+Once you've determined which cables you need, plug them into the back of the power supply. Don't force them, and recognize that the connectors are different on the device end versus the power supply end. You shouldn't be able to plug anything in where it doesn't belong; match the name of the cable to the name on the socket, and never mix and match modular cables from different power supplies. In the case of our Corsair PSU, we've plugged in the 24-pin cable, one CPU power connector, one PCI Express power connector, and one Serial ATA power lead.
+Corsair RM750e modular power supply
+Plugging the PSU end of the 24-pin power cable into the supply (Credit: Joseph Maldonado)
+Corsair RM750e modular power supply
+Plugging in the PSU end of the PCI Express lead to the supply (Credit: Joseph Maldonado)
+Corsair RM750e modular power supply
+In goes the SATA power cable ... (Credit: Joseph Maldonado)
+Corsair RM750e modular power supply
+... and the lead for the CPU power cable. (Credit: Joseph Maldonado)
+
+You're now ready to mount the supply. In our case, you maneuver the PSU in through the right side of the case, the side opposite where you install the motherboard ...
+Corsair RM750e modular power supply
+In this chassis, the PSU block goes in through the right side. (Credit: Joseph Maldonado)
+
+Some case designs have a backplate, secured by screws, around the rear PSU mounting area. If yours does, remove the plate, screw it onto the back of the PSU, and then guide the whole works through the gap in the back of the case before screwing it into place. In our chassis, we maneuvered the power supply into place and mounted it through the back using the four screws included with the PSU.
+Corsair RM750e modular power supply
+Align the PSU with the screw holes on the case back and mount in place with the screws in the PSU box. (Credit: Joseph Maldonado)
+
+As with your radiator, make sure screws are going into screw holes in the PSU enclosure, not any grilles or other openings. Note that the power supply should be oriented so the fan can pull in air from the bottom of the case, as in our example. With a different case, you may need to orient the PSU differently, making sure you're pulling in fresh air from the outside and sending it out the back, next to the main AC power socket and power switch.
+
+Routing the PSU cables is your next task. Depending on the PSU, they may be bulky, so take care, take your time, and don't dislodge any of the cables already installed, especially the front-panel headers. Note where these cables exit into the main case interior if you have a transparent case side, since these big cables can look clunky if not routed properly.
+
+Start with the CPU power connector, which in typical tower cases needs to stretch the furthest (assuming your PSU is at the bottom of the case). Here, we stretched it to the top of the case behind the motherboard tray, and looped it through a hole at the top of the case above the motherboard.
+Corsair RM750e modular power supply
+Feeding the PSU power cable through a passage in the case top (Credit: Joseph Maldonado)
+
+In many builds, this is a bit of a stretch, and with some oversize chassis you may need an aftermarket extension cable. We then plugged it into the 4- or 8-pin socket or sockets at the top of the board. Match up the protrusion of the edge of the socket with the clip on the plug, and make sure the plug engages with a solid click. Tug it gently to make sure it's seated.
+Corsair RM750e modular power supply
+Plugging the PSU CPU power lead into the motherboard (Credit: Joseph Maldonado)
+
+The same goes for the main 24-pin power connector. It inserts only one way, and if you don't hear a solid click it's not installed properly. With some power supplies, this connector is implemented as a breakaway connector to a 20+4-pin plug that is split up for compatibility with older motherboards. With any modern motherboard, you'll use the full 24 pins and must plug them in at the same time to be sure all are seated properly.
+Corsair RM750e modular power supply
+Positioning the 24-pin main power connector on the motherboard (Credit: Joseph Maldonado)
+
+Again, make sure you get a click and then tug gently. This is your stiffest, most ornery cable, so give it some looping radius to keep it from stressing the socket, and make sure it's routed through a nearby cutaway in the motherboard tray.
+
+As for the PCI Express cable or cables, snake them through what you think will be the closest entry point to the trailing edge of your graphics card and leave them there. You may need to reroute them later, but let's put them close to their destination for now.
+Corsair RM750e modular power supply
+Routing the graphics-card ends of the PCI Express power cables into the case interior (Credit: Joseph Maldonado)
+
+The same goes for any SATA cables you may have installed. Run them as close as you can to the installation point for any 2.5- or 3.5-inch drives you may install. In our build, we used this opportunity to plug the SATA power connector from the CPU cooler's cable mass into one of the connectors on the SATA power lead...
+Corsair RM750e modular power supply
+Plugging the SATA cable from the CPU cooler into the PSU's SATA power lead (Credit: Joseph Maldonado)
+
+Okay, you’ve done all you can with your PSU for now. With that in mind, let's move on to platter hard drives and 2.5-inch SSDs.
+9. Mount and Connect the SATA Drives 
+
+Depending on your PC build, you may be able to skip this step altogether; some users won't need any more storage than the M.2 boot drive in a motherboard slot. But if you happen to have an older 2.5-inch SSD that you'd like to install, or need massive storage in the form of an old-school 3.5-inch hard drive, this step is for you.
+
+Our sample case has mounts for 2.5- and 3.5-inch drives. Hard drives are passe for some PC users, but given that you can get them in capacities of 20TB or more, they're nothing to be sneezed at, especially considering the price of SSDs larger than 2TB. A 3.5-inch bay can usually also accept a 2.5-inch drive via alternate screw placements.
+
+For our build, we're installing a 3.5-inch hard drive. Remove one of the 3.5-inch trays next to the power supply by squeezing the tabs and use the mounting mechanism to snap in the drive. These particular trays have nibs that snap into the screw holes around the edges of the drive with a little flexing.
+3.5-Inch hard drive installation
+Snap the 3.5-inch drive into the tray. (Credit: Joseph Maldonado)
+
+Other designs require screws. If you're installing a 2.5-inch drive in this tray, you'll screw it in place from the underside of the tray into the underside of the drive. Either way, make sure the data and power connectors face the outward end of the tray when you slide it back in.
+3.5-inch hard drive installation
+Make sure the connectors on the drive face outward. (Credit: Joseph Maldonado)
+3.5-Inch Hard Drive Intallation
+Insert the drive in the bay gently, and it should snap into place. (Credit: Joseph Maldonado)
+
+Once the tray is back in place, hook up the drive's power and data cables. We mentioned the SATA power connector coming from the PSU. This cable has a host of connectors along its length, some inline and one in elbow-bend-style at the end. Use that one and plug it into the edge of the drive. You'll notice an L-shaped groove in the connector; it needs to match the L connector on the drive. You should get a gentle click without forcing it.
+3.5-Inch hard drive installation
+Plugging in the SATA power cable. Look for the L-shape in the connector. (Credit: Joseph Maldonado)
+
+That connector strictly delivers power; you also need a data connection between drive and motherboard. In the box with your motherboard should be one or more SATA cables. That cable plugs into the drive in only one direction; you should also get a gentle snap. Route the cable around the back to the nearest cutaway near the cluster of SATA ports on the motherboard. (Our sample board has two pairs in different spots.) Some SATA cables have an elbow bend at one end, and some have a straight-through connector at one or both ends. Here we'll use the elbow bend for the connection to the drive to reduce strain on the cable.
+3.5-Inch Hard Drive Intallation
+This is the SATA data cable, which also inserts only one way. (Credit: Joseph Maldonado)
+
+Generally speaking, you'll plug the drive into the lowest-numbered SATA port on your motherboard, according to your manual. But there may be exceptions to that; check the manual for the optimal port to use depending on what else you have installed. Occasionally the motherboard may disable certain SATA ports if a given M.2 slot is in use. Here, we're using one of the side-mounted SATA ports.
+3.5-inch hard drive installation
+The installed drive, with a view through the cable mass (Credit: Joseph Maldonado)
+
+As for 2.5-inch SATA solid-state drives, they install just like hard drives. Our Corsair case has additional 2.5-inch mounts on the back of the motherboard tray, which you can use for any 2.5-inch devices.
+2.5-Inch Hard Drive Installation
+These mounts on the back of the motherboard tray are for 2.5-inch drives. (Credit: Joseph Maldonado)
+
+One side note: The CPU cooler cable cluster has a SATA power connection to help power all the cooler-related hardware such as the pump and the RGB lights. In the previous step, we attached one of the inline SATA connectors from the PSU to this connector, just as if we were attaching a SATA drive to power. 
+10. Install a Wi-Fi Card
+
+This may be an optional step, as some motherboards have integrated Wi-Fi. Our Asus board doesn't, so we installed it via a PCI Express card. You can also opt for a Wi-Fi USB dongle or an M.2 card if the motherboard supports it. Or you may not need Wi-Fi at all if you're plugging your PC straight into Ethernet (which is best for stable connectivity anyway).
+Asus Wi-Fi Card Installation
+Our Asus Wi-Fi card (Credit: Joseph Maldonado)
+
+If the board has integrated Wi-Fi, you'll just screw a couple of antenna posts or leads into the designated sockets on the rear I/O shield. In the case of our build, we're scoping out one of the PCI Express x1 slots on the motherboard. If possible, you want one adequately removed from your graphics card. Unscrew the expansion-card backplate for the slot that you're going to use and insert the card into the slot.
+Asus Wi-Fi Card Installation
+Opening a slot for the Wi-Fi card (Credit: Joseph Maldonado)
+Asus Wi-Fi Card Installation
+Inserting the card into a PCIe x1 slot (Credit: Joseph Maldonado)
+
+Screw it down using the screw you removed from the backplate. The card will also probably require you to screw an antenna or antennas onto a connector on the back edge; feel free to do that now.
+Asus Wi-Fi Card Installation
+Adding the antennas (Credit: Joseph Maldonado)
+
+Our particular Asus Wi-Fi card also requires an internal USB 2.0 header connection. One end of the included cable goes into the trailing end of the card, the other into one of the empty USB 2.0 header connections along the bottom edge of the motherboard. Your Wi-Fi card may or may not require this extra internal cable connection.
+Asus Wi-Fi Card Installation
+The USB 2.0 header cable that comes with this Wi-Fi card connects the card to the motherboard. (Credit: Joseph Maldonado)
+Asus Wi-Fi Card Installation
+You can see the USB 2.0 header connections in the background at lower left. (Credit: Joseph Maldonado)
+11. Mount and Connect Case Fans/RGB
+
+It's almost time to install the graphics card, which will block access to much of the case. So we're going to do some final wire work before that. You may not need to do much or any of this in your own build, but we're trying to illustrate all the possibilities.
+
+First, consider the airflow pattern in your case before you put your fan plan together. It wholly depends on the case design, but in a classic tower like ours you generally want cool air flowing in from the front and bottom and warm air exiting the rear and top. This may or may not be possible (or make sense) depending on what you've installed, but it's what we are going for here. 
+
+Our Corsair case has two fans preinstalled: one in front as an intake, and one in back as exhaust. Here's a reminder from when the case was empty:
+Corsair 4000D Airflow
+The centrally located front-panel 120mm intake fan (with empty fan positions above and below) (Credit: Molly Flores)
+Corsair 4000D Airflow
+The rear 120mm exhaust fan (Credit: Molly Flores)
+
+The AIO radiator we installed has two fans of its own. If your PC case came with some preinstalled fans, and those are all you intend to use, you simply need to wire them to chassis fan headers on the motherboard. These are typically designated CHA FAN1, CHA FAN2, and so on (or possibly SYS FAN instead of CHA FAN). Check your manual for their exact locations; motherboard makers tend to stick them wherever there is room.
+
+Your fan cables may end in 3-pin or 4-pin connectors; the chassis fan headers on the motherboard will be 4-pin, but can also accept a 3-pin connection. Each header is keyed with a tab so you can only install the fan cables on the correct pins. What’s the difference? In short, 3-pin fans simply ramp up and down by changing the delivered voltage, while a 4-pin pulse width modulation (PWM) fan allows finer-grained control over revolutions per minute. PWM fans can spin up and down dynamically according to motherboard settings and system load and enable quieter operation with the ability to spin at low speeds when needed.
+
+We're going all-in on fans in this build, installing a six-fan RGB array to maximize airflow and also give the case some serious bling. The Corsair SF120 RGB Elite kits we chose have three fans apiece, each kit containing a controller module for up to six RGB fans (so we only need to use one).
+Corsair SP120 Fan Kit
+The SP120 RGB Elite fan kits, with one set unboxed. The rectangle up front is the bundled RGB controller. (Credit: Molly Flores)
+
+First, remove the existing fans. We pulled off the front face of the case, unhooked the air filter, and unscrewed four coarse screws to remove the front fan. The rear exhaust comes off via the same kind of screws. We're also going to remove the two 120mm fans that we installed on the the radiator servicing the CPU cooler; we would have done this sooner (when installing the radiator) but wanted to show the full installation process for liquid cooling with the stock fans. Put all these spare fans aside and unbox the new ones.
+
+These Corsair RGB fans each have two cable connections: one for fan control/power and one for the RGB lighting. Pre-route the cables for each, ideally with the cabling side of the fan facing the back wall of the case to hide the bulk of each cable run. You may need to rotate a fan 90 or 180 degrees to make sure the cables are in an optimal spot for routing. Snake each cable pair through the nearest pass-through in the case.
+
+Next, double-check the airflow path for each fan. In our sample chassis, the three front fans should have their intake sides facing the front and the frame (exhaust) sides facing the interior, so air flows from them into the case. Screw them in place with four of the thick fan screws each.
+Installing the SP120 RGB Elite Case Fans
+Screw in the three RGB front fans through the front face of the case. (Credit: Joseph Maldonado)
+Installing the SP120 RGB Elite Case Fans
+On this case, you can adjust fan positions slightly up and down, as the mounting holes are actually slots. (Credit: Joseph Maldonado)
+
+The new rear exhaust RGB fan should be installed in the same orientation as the one you removed, with the frame portion facing the back of the case so air inside the case is pulled outward.
+Installing the SP120 RGB Elite Case Fans
+For the exhaust fan, make sure the frame side of the fan faces the back of the case. (Credit: Joseph Maldonado)
+
+The two fans mounting onto the radiator should have the frame side touching the radiator, drawing air from inside the case, pushing it through the radiator and out the top of the chassis.
+Installing the SP120 RGB Elite Case Fans
+Replacing the ordinary fans on the radiator with RGB ones: Let there be more light! (Credit: Joseph Maldonado)
+
+You'll use the coarse fan screws included with the fans to mount the three front fans and one rear fan. The radiator mounting will require the eight long screws and washers you originally used.
+
+Now for the tricky part: all that wiring. You have 12 cables to route, so this is where things are going to get messy no matter how neat you are. Start with the 4-pin power connectors on each chassis fan. The two on the radiator go into the fan sockets supplied by the CPU cooler’s hydra-cluster of connectors.
+
+As for the other four, you'll need to plug them into the various CHA FAN or SYS FAN headers on the board. In the case of our Asus board, we had only three headers; the fourth, we were advised by the manual, would work fine on the unused AIO FAN header, with the speed adjusted in the BIOS later on. (In the end, this worked out fine.) Alternatives would include buying a splitter for one of the headers (two fans controlled off a single header), or buying a third-party fan-controller hub or module.
+Installing the SP120 RGB Elite Case Fans
+Attaching one of the chassis fan cables to a CHA_FAN header (Credit: Joseph Maldonado)
+Installing the SP120 RGB Elite Case Fans
+Doing likewise for the AIO_PUMP header (Credit: Joseph Maldonado)
+Installing the SP120 RGB Elite Case Fans
+Another header connection in a cramped spot (Credit: Joseph Maldonado)
+
+The RGB cables, meanwhile, will require special care. This build has way too many to go directly into headers on the motherboard, but Corsair provided a so-called RGB Commander module, into which you can plug all six RGB cables, with the fans. It'll take some routing, but you can put this module near the front of the case and hide it when the right-side panel is on. We plugged all six RGB cables from the fans in here. 
+Installing the SP120 RGB Elite Case Fans
+Here we've plugged the six fan RGB cables into the RGB controller module that came with the fans. (Credit: Joseph Maldonado)
+Installing the SP120 RGB Elite Case Fans
+Mounting the module in the chassis in a bare spot near the front (Credit: Joseph Maldonado)
+
+One small complication with our build: The RGB Commander module requires a USB 2.0 header connection. Our board didn't have enough to go around, having just two used by the Wi-Fi card and the CPU cooler's hydra-cluster of cables. So we needed to install an internal USB 2.0 header hub (the Internal 4-Port USB 2.0 Hub, another Corsair accessory) alongside the RGB Commander module, letting us plug more than one USB 2.0 header device into one motherboard connector.
+Installing the Corsair Internal 4-Port USB 2.0 Hub: One cable connection
+Plugging a USB 2.0 header cable into the Internal 4-Port USB 2.0 Hub (Credit: Joseph Maldonado)
+
+That made for some additional cable chaos. It worked okay, but we'd recommend making sure your motherboard has the accommodations for all these USB internal connections.
+Installing the Corsair Internal 4-Port USB 2.0 Hub: Two cable connections
+Two USB 2.0 header connections to the Internal 4-Port USB 2.0 Hub (Credit: Joseph Maldonado)
+Installing the Corsair Internal 4-Port USB 2.0 Hub: Mounting in Case
+The Internal 4-Port USB 2.0 Hub mounted alongside the RGB controller (Credit: Joseph Maldonado)
+Installing the Corsair Internal 4-Port USB 2.0 Hub: USB header connection to board
+Connecting the Internal 4-Port USB 2.0 Hub to one of the USB 2.0 motherboard headers. Now two USB 2.0 items flow into that one port. (Credit: Joseph Maldonado)
+
+Okay, six RGB fans installed, cables routed as cleanly as possible, and a disco party almost ready to begin. We could go further with RGB light strips, as our motherboard has dedicated RGB and ARGB connectors that we can plug strips directly into, but we'll hold off for the moment and see how the build looks before adding more bling. 
+12. Install the Graphics Card
+
+Okay, we're down to the last big piece. First take the opportunity to route any cables around the GPU area, because once the card is in place it will pin down many things or at least make access difficult. We're using a PNY-brand Nvidia GeForce RTX 4070 Ti card that's a whopping three slots wide and will occupy a lot of lateral space.
+PNY GeForce RTX 4070 Ti
+Unboxing the RTX 4070 Ti card (Credit: Joseph Maldonado)
+
+Test-fit the graphics card over its slot and determine which of the backplate covers you need to remove to accommodate it. In this case, that's the three slots next to the Wi-Fi card. Unscrew the slot backplate covers and set them aside.
+GeForce RTX 4070 Ti install
+Removing the PCI Express slot backplates for the graphics card (Credit: Joseph Maldonado)
+GeForce RTX 4070 Ti install
+Three slots are required for this thick GPU. (Credit: Joseph Maldonado)
+
+Then remove the plastic protector from the PCI Express contacts on the card. Gently lower the card into the slot and guide it into place until the lock in the slot gives an audible click. The card should sit stably; screw it down with the screws you removed from the backplates.
+GeForce RTX 4070 Ti install
+Insert the card lined up with the open positions, and the connector on the bottom edge aligned with the PCIe x16 slot. (Credit: Joseph Maldonado)
+
+Usually, the slot closest to the CPU is the right one for your graphics card, but check your motherboard manual for exceptions. Make sure of clear access to the HDMI and DisplayPort connectors on the back of the card and remove any plastic plugs inside the ports. 
+GeForce RTX 4070 Ti install
+Press in the card evenly until the latch or lock on the PCIe slot clicks. (Credit: Joseph Maldonado)
+GeForce RTX 4070 Ti install
+Return the screws to their original spots to hold the card in place. (Credit: Joseph Maldonado)
+
+Next, find the PCI Express cable that you routed into the interior of the case and examine its ends. The PCI Express power connectors are known as 6+2 connectors: a cluster of six pins plus a pair. Some graphics cards require 8-pin connectors, some require 6-pin, and some require a mix of the two.
+
+To fill an 8-pin connector, you combine a 6+2 cluster and plug them together into the slot (much like the 20+4 motherboard power connector if your PSU has one). They insert only one way, and you should hear a sound click when it engages successfully. As with all other power connectors, give a gentle tug to test the seating (in the case of a 6+2 connector, both pieces of it). Depending on the card, you may need one, two, or three 6- or 8-pin connectors from the power supply.
+
+Some of the latest Nvidia GeForce cards, including our RTX 4070 Ti card, employ a special power dongle that comes with the card. This adapter has a 12-pin proprietary connection at the card end (or, with 40 Series cards, 12 pins plus four additional ones for signaling) and forks off into two or three connectors that plug into the power supply leads. Some of the newest PSUs come with a direct connection for this connector; ours doesn't.
+GeForce RTX 4070 Ti install
+Our card's proprietary 12-pin cable is forked and takes two 8-pin leads from the PSU. (Credit: Joseph Maldonado)
+GeForce RTX 4070 Ti install
+Connecting the 12-pin end of the power lead (Credit: Joseph Maldonado)
+
+In this case, we plugged the 12-pin connector into the card’s top edge, and two 8-pin connectors into the forked ends.
+GeForce RTX 4070 Ti install
+The two 8-pin arms of the cable... (Credit: Joseph Maldonado)
+GeForce RTX 4070 Ti install
+...take the two 8-pin PCIe plugs from your PSU. (Credit: Joseph Maldonado)
+
+You may need to experiment with cable routing to make sure nothing's not pulling on the card, or on anything else in the case. Alas, the 12-pin Nvidia connector is not especially elegant or well-suited to clean cable routing.
+GeForce RTX 4070 Ti install
+Don't bend the 12-pin cable too drastically. Allow it an arc. (Credit: Joseph Maldonado)
+13. Perform the Final Cable Management 
+
+It's almost time to close up shop (put the sides back on your case), so you want to make sure things look as tidy as possible. You also want to make sure that the cables on the right-hand side of the case are routed well enough so that it's possible to put the side panel back on!
+Corsair 4000D Airflow Cable Routing
+Final cable routing (Credit: Joseph Maldonado)
+
+You'll notice some hoops in the back of the motherboard tray on most cases, our Corsair chassis included. These are anchor points for zip ties or twist ties, which you can use to guide clusters of cables neatly around the edge of the case. You want to avoid too much cable crossover bulking so that the right-side panel goes on easily. In doing your routing, avoid too much tension on any of the cables, especially delicate headers like the front panel and USB. There's no need to strive for perfection behind a case panel that will block all view, but some cursory routing is a professional touch that will help keep cables from tugging on one another. That said, splurge on six RGB fans like we did and you're asking for trouble.
+Corsair 4000D Airflow Cable Routing
+Cable routing: Connect twist ties or zip ties to the mounting hoops on the case. (Credit: Joseph Maldonado)
+
+Our case also has a central cable tunnel with Velcro fasteners; we rounded up as much as we could in there and clustered much of the rest using twist ties around the edges. Use twist ties first before fastening things with the more permanent zip ties later; you may want to reroute things as you go, and you don't want to snip zip ties if you don't have to.
+
+Finally, check around for any last cables that may remain unattached or have come loose. As we noted in Step 9, the Corsair CPU cooler has a SATA power connector to power the lighting and pump; we checked that it was attached that to one of the SATA leads off the PSU.
+
+All right, time to button things up. Slide and snap on the right-side cover, smoothing over any major cable bulk, and fasten this side with its thumbscrews.
+Corsair 4000D Airflow Side Panels
+Snapping the right side panel back on: Hiding the cable mass (or should we say mess?) (Credit: Joseph Maldonado)
+
+Next, the front panel: We'd removed both the front grille and the dust filter beneath it, so they needed refitting in turn.
+Corsair 4000D Airflow Dust Filter
+Reinstalling the dust filter on the case front (Credit: Joseph Maldonado)
+Corsair 4000D Airflow Cable Routing
+Snapping the front face back on, over the front intake filter (Credit: Joseph Maldonado)
+
+Our case also had a magnetic dust filter for the top panel, which just drops into place.
+Corsair 4000D Airflow Cable Routing
+Magnetic edges guide this filter into place. (Credit: Joseph Maldonado)
+
+If the other side is a glass panel (as here), make sure your case interior is as well-routed and clean as can be. Handle the panel by its edges, and slide or snap it back into place, fastening it with its own screws.
+Corsair 4000D Airflow Cable Routing
+Support the glass panel from the bottom as you install it so it doesn't hit the table. (Credit: Joseph Maldonado)
+
+Use a microfiber cloth to make sure the glass is clean on the inside before installing, so you don't have to go back inside to clean things up.
+
+Ready for first boot? Presumably you have a monitor, mouse, and keyboard handy. Plug the monitor into one of the DisplayPort or HDMI connectors on the graphics card (don't use the motherboard video outputs unless you’re using the integrated graphics). The keyboard and mouse plug into two of the rear-panel USB ports. Finally, fish out the AC power cable from the PSU box, plug one end into the power supply, and the other end into the wall.
+14. Boot to BIOS and Install the OS
+
+Okay, the moment of truth! Hit the power button and, with any luck, the system should cycle through its POST process and take you to the motherboard BIOS screen. Pat yourself on the back! Success!
+Corsair 4000D Airflow Lit Up
+High five! Booted on the first try. (Credit: Joseph Maldonado)
+Corsair 4000D Airflow Angle View
+Look around the chassis and check that all fans are spinning. (Credit: Joseph Maldonado)
+
+Within the BIOS, you'll want to check that all your drives are detected; this may be on the initial screen or in an Advanced Mode view. Check that the full amount of memory you installed is showing up, in each of the slots, and that the CPU is detected correctly by name and there are no warnings about a lack of CPU cooler detection.
+A look at the Asus Prime B660 PC BIOS
+A first look at our Asus motherboard's BIOS (Credit: Joseph Maldonado)
+Another Look at the Prime BIOS
+Everything looks to be in operating order: CPU, storage, memory, and fans all detected properly. (Credit: Joseph Maldonado)
+
+One immediate tweak you can make here is to set the memory speed via an XMP (Intel) or Expo (AMD) profile. You'll want to activate one or the other and choose one of the preset memory profiles that corresponds to what your RAM kit supports. Note that Expo in its early days has been connected to some overheating scenarios with certain CPUs; before activating Expo, be sure your motherboard BIOS has been updated to the latest version recommended on the board maker's site.
+Asus Prime B660 BIS Close Up
+We enabled the XMP setting to turn on faster memory speeds. (Credit: Joseph Maldonado)
+
+Assuming all is well from this point forward, it's time to install your operating system. Here we'll assume it's Ubuntu, along with installation media, ideally a USB key. If you haven't, you can install an unlicensed version of Windows, but you'll need a Microsoft account to associate with the installation, as well as a licensed copy of Windows installed on another PC to enable you to create the installation media. To do that, you'll want to get a USB flash drive of at least 8GB and format it in FAT32 format; go to this Microsoft page to find the install-media creator utility for your particular version of Windows. You'll be prompted to install a utility on the licensed PC, which will walk you through the creation process. When done, you should have a bootable installer on the USB key.
+
+Once you've created the Windows install media, plug the USB drive into one of the ports in the back of the system and reboot. if the system just goes back to the BIOS, you may need to enable USB boot in the BIOS and or set the boot order to prioritize the USB key. The system should boot from the key the next time you try and take you to the start of the Windows install process. Follow the prompts, designate the drive onto which to install Windows (make sure it's the primary SSD), and make sure it’s partitioned as you like. If it’s new, you’ll likely need to create a new partition for Windows, which will auto-create a few smaller ones to accommodate the install. 
+
+And away you go. Along the way you'll be prompted to connect to the internet; plug in your Ethernet cable or try connecting via Wi-Fi if your system is so equipped. Follow the prompts and log into your Microsoft account when requested, or create one on the spot. Earlier versions of Windows 10 and 11 let you skip the Microsoft account and internet-connection part of the installation, but no more. The Windows image typically installs your Wi-Fi or Ethernet drivers, so connecting to the Net before you get to the desktop is possible. That said, if you run into issues or simply can't get internet where you're testing your build, a workaround may still exist for you to get to the Windows desktop without the Microsoft-account runaround.
+
+After 20 or 30 minutes, you should see the Windows desktop. Unplug the USB drive and check the taskbar for the state of your internet access. As noted, Windows 10 and 11 are generally great about preinstalling drivers and enabling connectivity. If you're running into issues connecting to Wi-Fi, jack in by Ethernet if possible; otherwise, you may need to scrounge up your Wi-Fi card or dongle’s drivers on another PC to get connected to the net. With some older motherboards, you may also need to find an Ethernet driver before you'll be able to connect your new build to the net in wired fashion, so it can be crucial to have another working PC handy. Some motherboard vendors still include drivers on a CD; in the worst-case scenario, you may need to get an external USB drive to put the initial drivers on your system.
+
+Once you have internet connectivity, however, run Windows Update repeatedly until everything is up to date. This will include both Windows components and any drivers you need along the way. If Windows doesn't, you'll also want to hit your GPU vendor's site for the latest driver for your graphics card. Once Windows Update returns no more action items, check Device Manager in the Windows Control Panel to see what else if anything needs a driver. In the case of our build, we also needed to install Corsair's iCUE utility to control the RGB lighting on the fans and CPU cooler.
+
+That done, you're ready to install your browser of choice, your favorite gaming services (Steam and Epic, go to town!), and the productivity apps you can't live without. Enjoy and be proud: You're all rigged up, and you did it yourself.
+
+The best stores are Walmart, Kroger, Best Buy
+
+
+
+Walmart today is a people-led, tech-powered omnichannel retailer dedicated to helping people save money and live better.
+
+
+Since Sam Walton opened the first Walmart, we have opened thousands of stores across the U.S. and internationally. Around the world, customers want the same things: value, a broad assortment of quality items and services, a convenient and enjoyable shopping experience, and to do business with a company they trust. We are on a mission to meet our customers and members wherever they are, with the things they want, where and how they want them. And although the ways we deliver these experiences is changing, and changing fast, our promise to improve the customer and associate experience is constant.
+
+
+    We live our values and provide opportunities for associates to grow, thrive and belong.
+    We create delightful experiences, run intelligent operations and shape a better future through innovation.
+    We serve our customers and members with the things they want, when, where and how they want them, saving them time.
+    We live our commitment to Every Day Low Prices.
+    We enable people to be healthier and build their wealth, and we strengthen communities and the planet.
+
+
+In a world that’s always changing, we believe we need to be willing to evolve while staying true to who we are. And we are. We innovate and change alongside our associates and customers in ways that align with our timeless values. By doing this, we help communities thrive and strengthen the world around us.
+At a Glance
+
+    75% of salaried store, club and supply chain managers in the U.S. begin as hourly associates.
+    Walmart has invested $1 billion in education and skills training between 2021 - 2026.
+    Each week, approximately 255 million customers and members visit our more than 10,750 stores and numerous eCommerce websites in 19 countries.
+    Our unrivaled global supply chain moves more than 100 billion items per year.
+    With our $350 billion investment in items made, grown or assembled in the U.S., we’re supporting more than 750,000 jobs.
+    We are targeting zero emissions by 2040 without carbon offsets and 100% renewable energy across our operations by 2035.
+
+Sam’s Club
+
+At Sam’s Club, we’re pioneering the future of retail, providing members exclusive access to value, convenience and modern omnichannel shopping experiences. Our curated selection includes quality fresh food and Member's Mark items, along with innovative technology and services like Scan & Go, curbside pickup and home delivery.
+
+ 
+Walmart International
+
+We bring Walmart to the world and the world to Walmart, generating sustainable growth for the company and sharing innovations across our markets while making a positive impact in the communities where we operate. Walmart International currently operates in 18 countries.
+
+About Kroger:
+
+Whether we manufacture, market, stock, check, deliver, or manage, we all try to make their experience as uplifting as possible. Just like Barney Kroger did when he brought together the butcher, the baker, dry goods, and produce all under on roof. We’ve always been about value, convenience, and making customer’s lives simpler.
+
+To life them up, we keep our hands, hearts and minds open so we can be attentive to their needs and provide true Kroger hospitality and generosity. Because every time someone crosses our threshold we get a fresh chance to make an emotional connection, lighten their load and lift them up.
+
+It’s a simple truth that our world is hungry for uplift. It’s a universal need, as powerful as our need for food or fuel.
+
+Best Buy:
+
+At Best Buy, our purpose is to enrich lives through technology. We do that by leveraging our unique combination of tech expertise and human touch to meet our customers’ everyday needs, whether they come to us online, visit our stores or invite us into their homes. We have more than 1,000 stores and more than 85,000 employees in the United States and Canada.
+.NET
+
+.NET is a secure, reliable, and high-performance application platform.
+
+C# is the programming language for .NET. It's strongly-typed and type-safe and has integrated concurrency and automatic memory management.
+
+Learn about .NET
+
+C#
+
+C# is a modern, safe, and object-oriented, programming language that spans from high-level features such as data-oriented records to low-level features such as function pointers.
+
+Learn about C#
+
+Cross Platform
+
+.NET is supported on Android, Apple, Linux, and Windows operating systems. It's available in several Linux distributions, like Red Hat Enterprise Linux and Ubuntu.
+Libraries
+
+.NET includes a standard set of libraries and APIs, ranging from collections, to networking, to machine learning.
+
+NuGet is the package manager for .NET and contains over 300,000 packages.
+
+Learn about .NET standard libraries
+
+Application models
+
+You can build many types of apps with .NET. To help you build apps faster, app models are built on top of the base libraries.
+
