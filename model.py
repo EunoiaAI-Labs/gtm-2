@@ -2,6 +2,51 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.contrib.training import HParams
 
+
+def _ensure_batch(x):
+    x = np.asarray(x, dtype=np.int32)
+    if x.ndim == 1:
+        return x[None, :]
+    if x.ndim != 2:
+        raise ValueError('Context should be rank 1 or 2 tensor of token ids.')
+    return x
+
+
+def _enforce_top_k(probs, k):
+    """Filter probability distribution using top-k sampling."""
+    if k is None or k <= 0:
+        return probs
+    if k >= probs.shape[-1]:
+        return probs
+    thresh = np.partition(probs, -k)[-k]
+    mask = probs < thresh
+    filtered = np.where(mask, 0.0, probs)
+    total = filtered.sum()
+    if total <= 0:
+        return probs
+    return filtered / total
+
+
+def _sample_from_logits(logits, temperature, top_k, rng):
+    logits = np.asarray(logits, dtype=np.float64)
+    temperature = float(temperature)
+    if temperature <= 0:
+        raise ValueError('Temperature must be positive.')
+    logits = logits / temperature
+    logits = logits - logits.max()
+    probs = np.exp(logits)
+    probs = probs / probs.sum()
+    probs = _enforce_top_k(probs, top_k)
+    return int(rng.choice(len(probs), p=probs))
+
+
+def _batch_sample(logits, temperature, top_k, rng):
+    samples = []
+    for row in logits:
+        token = _sample_from_logits(row, temperature, top_k, rng)
+        samples.append([token])
+    return np.asarray(samples, dtype=np.int32)
+
 def default_hparams():
     return HParams(
         n_vocab=0,
@@ -172,3 +217,87 @@ def model(hparams, X, past=None, scope='model', reuse=False):
         logits = tf.reshape(logits, [batch, sequence, hparams.n_vocab])
         results['logits'] = logits
         return results
+
+
+class ParagraphGenerator(object):
+    """Utility for accelerated paragraph sampling from the Transformer model."""
+
+    def __init__(self, hparams, *, scope='model'):
+        self.hparams = hparams
+        with tf.variable_scope(scope, reuse=tf.AUTO_REUSE):
+            self._context_tokens = tf.placeholder(tf.int32, shape=[None, None], name='context_tokens')
+            context_outputs = model(hparams, self._context_tokens, reuse=tf.AUTO_REUSE)
+            self._context_present = context_outputs['present']
+
+            self._past_input = tf.placeholder(
+                tf.float32,
+                shape=[None, hparams.n_layer, 2, hparams.n_head, None, hparams.n_embd // hparams.n_head],
+                name='past_state',
+            )
+            self._step_tokens = tf.placeholder(tf.int32, shape=[None, None], name='step_tokens')
+            step_outputs = model(hparams, self._step_tokens, past=self._past_input, reuse=tf.AUTO_REUSE)
+            self._step_present = step_outputs['present']
+            self._step_logits = step_outputs['logits']
+
+    def generate_paragraph(
+        self,
+        session,
+        context_tokens,
+        *,
+        max_length=200,
+        temperature=1.0,
+        top_k=40,
+        stop_sequence=None,
+        min_length=0,
+        seed=None,
+    ):
+        """Generate a single paragraph of tokens.
+
+        Args:
+            session: Active ``tf.Session`` bound to the model graph.
+            context_tokens: Initial token ids used to prompt the model.
+            max_length: Maximum number of new tokens to sample.
+            temperature: Softmax temperature for sampling.
+            top_k: Restrict sampling to the top-k tokens.
+            stop_sequence: Optional iterable of token ids that ends generation when
+                encountered (useful for ``\n\n``-delimited paragraphs).
+            min_length: Minimum number of new tokens to produce before early stop.
+            seed: Optional integer seed for deterministic sampling.
+
+        Returns:
+            A 1-D ``np.ndarray`` of token ids representing the completed paragraph.
+        """
+
+        rng = np.random.RandomState(seed) if seed is not None else np.random
+        context = _ensure_batch(context_tokens)
+        if context.shape[1] == 0:
+            raise ValueError('Context must contain at least one token.')
+        feed = {self._context_tokens: context}
+        past = session.run(self._context_present, feed_dict=feed)
+        generated = context
+        prev = context[:, -1:]
+
+        if stop_sequence is not None:
+            stop_sequence = tuple(int(t) for t in stop_sequence)
+        produced = 0
+
+        for _ in range(max_length):
+            fetches = [self._step_logits, self._step_present]
+            feed_step = {self._step_tokens: prev, self._past_input: past}
+            logits, past = session.run(fetches, feed_dict=feed_step)
+            logits = logits[:, -1, :]
+            next_token = _batch_sample(logits, temperature, top_k, rng)
+            generated = np.concatenate([generated, next_token], axis=1)
+            prev = next_token
+            produced += 1
+
+            if (
+                stop_sequence is not None
+                and len(stop_sequence) > 0
+                and produced >= max(min_length, len(stop_sequence))
+            ):
+                tail = generated[0, -len(stop_sequence):]
+                if tuple(tail.tolist()) == stop_sequence:
+                    break
+
+        return generated[0]
