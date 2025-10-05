@@ -1,10 +1,12 @@
-"""Small script that demonstrates prompting an off-the-shelf LLM."""
+"""Showcase a tiny self-contained LLM that knows about HTML tags."""
 
 from __future__ import annotations
 
 import argparse
+import re
+from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Sequence
+from typing import Sequence
 
 from dataset_utils import build_prompt_completion_pairs, load_html_tag_dataset
 
@@ -12,8 +14,8 @@ from dataset_utils import build_prompt_completion_pairs, load_html_tag_dataset
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Run a quick generation demo using a 🤗 Transformers text-generation "
-            "pipeline."
+            "Run the repository's built-in miniature LLM that specialises in "
+            "HTML tag descriptions."
         )
     )
     parser.add_argument(
@@ -24,14 +26,20 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--model",
-        default="distilgpt2",
-        help="Model identifier compatible with transformers.pipeline().",
+        default="html-tag-llm",
+        help=(
+            "Name of the local LLM persona to load (only 'html-tag-llm' is "
+            "currently available)."
+        ),
     )
     parser.add_argument(
         "--max-length",
         type=int,
         default=80,
-        help="Maximum length for generated text (in tokens).",
+        help=(
+            "Maximum length for generated completions. The local model deals in "
+            "characters, so this acts as a soft character limit."
+        ),
     )
     parser.add_argument(
         "--interactive",
@@ -53,28 +61,79 @@ def choose_prompts(prompt_completion: Sequence[dict[str, str]]) -> list[str]:
     return examples
 
 
-def create_generator(model: str):
-    """Create a text-generation pipeline for the requested model."""
+@dataclass
+class LocalHTMLTagLLM:
+    """A deliberately tiny "LLM" backed by the bundled HTML dataset."""
 
-    try:
-        from transformers import pipeline
-    except ImportError as exc:  # pragma: no cover - exercised manually.
+    tag_to_description: dict[str, str]
+
+    _TAG_PATTERN = re.compile(r"<[^>]+>")
+
+    def generate(self, prompt: str, max_length: int) -> str:
+        """Return a completion for ``prompt`` using the local knowledge base."""
+
+        tag = self._extract_tag(prompt)
+        if tag and tag in self.tag_to_description:
+            return self._trim(self.tag_to_description[tag], max_length)
+
+        # Fall back to fuzzy matching: look for any known tag name inside the
+        # prompt (even without angle brackets).
+        lowered = prompt.lower()
+        for known_tag, description in self.tag_to_description.items():
+            plain = known_tag.strip("<>").lower()
+            if len(plain) <= 1:
+                continue
+            if re.search(rf"\b{re.escape(plain)}\b", lowered):
+                return self._trim(description, max_length)
+
+        return self._trim(
+            (
+                "I'm a tiny in-repo language model that specialises in HTML "
+                "elements, but I don't recognise that prompt yet. Try asking "
+                "about a specific tag like <a> or <section>."
+            ),
+            max_length,
+        )
+
+    def _extract_tag(self, prompt: str) -> str | None:
+        match = self._TAG_PATTERN.search(prompt)
+        if match:
+            return match.group(0)
+        return None
+
+    @staticmethod
+    def _trim(text: str, max_length: int) -> str:
+        if max_length <= 0:
+            return ""
+        if len(text) <= max_length:
+            return text
+        trimmed = text[: max_length - 1].rstrip()
+        return f"{trimmed}…"
+
+
+def create_generator(model: str, pairs: Sequence[tuple[str, str]]) -> LocalHTMLTagLLM:
+    """Create the requested local LLM instance."""
+
+    model = model.lower()
+    if model != "html-tag-llm":
         raise SystemExit(
-            "transformers is required for this demo. Install it via "
-            "`pip install transformers torch` and run the script again."
-        ) from exc
+            "Only the built-in 'html-tag-llm' persona is available. Got: "
+            f"{model!r}."
+        )
 
-    return pipeline("text-generation", model=model)
-
-
-def generate_text(generator: Any, prompt: str, max_length: int) -> str:
-    """Generate a completion for the provided prompt using the pipeline."""
-
-    outputs = generator(prompt, max_length=max_length, num_return_sequences=1)
-    return outputs[0]["generated_text"]
+    tag_to_description = {tag: description for tag, description in pairs}
+    return LocalHTMLTagLLM(tag_to_description)
 
 
-def run_dataset_demo(prompts: Sequence[str], generator: Any, max_length: int) -> None:
+def generate_text(generator: LocalHTMLTagLLM, prompt: str, max_length: int) -> str:
+    """Generate a completion for the provided prompt using the local LLM."""
+
+    return generator.generate(prompt, max_length)
+
+
+def run_dataset_demo(
+    prompts: Sequence[str], generator: LocalHTMLTagLLM, max_length: int
+) -> None:
     """Run the canned dataset demonstration."""
 
     for prompt in prompts:
@@ -85,10 +144,13 @@ def run_dataset_demo(prompts: Sequence[str], generator: Any, max_length: int) ->
         print(generate_text(generator, prompt, max_length))
 
 
-def run_interactive_session(generator: Any, max_length: int) -> None:
+def run_interactive_session(generator: LocalHTMLTagLLM, max_length: int) -> None:
     """Interactively prompt the user for text to feed to the LLM."""
 
-    print("Enter a prompt to generate a completion (press Ctrl-D to exit).")
+    print(
+        "Enter a prompt to query the built-in HTML tag LLM "
+        "(press Ctrl-D to exit)."
+    )
     while True:
         try:
             prompt = input("Prompt> ")
@@ -106,13 +168,14 @@ def run_interactive_session(generator: Any, max_length: int) -> None:
 
 def main() -> None:
     args = parse_args()
-    generator = create_generator(args.model)
+    pairs = load_html_tag_dataset(args.dataset)
+    generator = create_generator(args.model, pairs)
+    print("Loaded the repository's local html-tag-llm persona.")
 
     if args.interactive:
         run_interactive_session(generator, args.max_length)
         return
 
-    pairs = load_html_tag_dataset(args.dataset)
     prompt_completion = build_prompt_completion_pairs(pairs)
     prompts = choose_prompts(prompt_completion)
     run_dataset_demo(prompts, generator, args.max_length)

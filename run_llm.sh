@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-MODEL="distilgpt2"
+MODEL="html-tag-llm"
 MAX_LENGTH=80
 DATASET="${SCRIPT_DIR}/dataset.txt"
 INTERACTIVE=1
@@ -13,9 +13,9 @@ usage() {
 Usage: $(basename "$0") [options]
 
 Options:
-  --model NAME          Hugging Face model identifier (default: ${MODEL}).
-  --max-length TOKENS   Maximum generation length (default: ${MAX_LENGTH}).
-  --dataset PATH        Dataset file for non-interactive demos.
+  --model NAME          Local LLM persona to load (default: ${MODEL}).
+  --max-length TOKENS   Maximum completion length (default: ${MAX_LENGTH}).
+  --dataset PATH        Dataset file that feeds the local LLM.
   --demo                Run the canned dataset demo instead of interactive mode.
   --help                Show this help message.
 USAGE
@@ -52,6 +52,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 if [[ "${INTERACTIVE}" -eq 1 ]]; then
+  exec python "${SCRIPT_DIR}/llm_demo.py" --model "${MODEL}" --max-length "${MAX_LENGTH}" --dataset "${DATASET}" --interactive
   exec python "${SCRIPT_DIR}/llm_demo.py" --model "${MODEL}" --max-length "${MAX_LENGTH}" --interactive
 else
   exec python "${SCRIPT_DIR}/llm_demo.py" --model "${MODEL}" --max-length "${MAX_LENGTH}" --dataset "${DATASET}"
