@@ -53,6 +53,7 @@ done
 
 if [[ "${INTERACTIVE}" -eq 1 ]]; then
   exec python "${SCRIPT_DIR}/llm_demo.py" --model "${MODEL}" --max-length "${MAX_LENGTH}" --dataset "${DATASET}" --interactive
+  exec python "${SCRIPT_DIR}/llm_demo.py" --model "${MODEL}" --max-length "${MAX_LENGTH}" --interactive
 else
   exec python "${SCRIPT_DIR}/llm_demo.py" --model "${MODEL}" --max-length "${MAX_LENGTH}" --dataset "${DATASET}"
 fi
