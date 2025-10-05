@@ -3,12 +3,12 @@
 from __future__ import annotations
 
 import argparse
-import re
-from dataclasses import dataclass
+from collections.abc import Callable, Sequence
 from pathlib import Path
-from typing import Sequence
+from typing import Any
 
 from dataset_utils import build_prompt_completion_pairs, load_html_tag_dataset
+from model import LocalHTMLTagLLM
 
 
 def parse_args() -> argparse.Namespace:
@@ -61,56 +61,6 @@ def choose_prompts(prompt_completion: Sequence[dict[str, str]]) -> list[str]:
     return examples
 
 
-@dataclass
-class LocalHTMLTagLLM:
-    """A deliberately tiny "LLM" backed by the bundled HTML dataset."""
-
-    tag_to_description: dict[str, str]
-
-    _TAG_PATTERN = re.compile(r"<[^>]+>")
-
-    def generate(self, prompt: str, max_length: int) -> str:
-        """Return a completion for ``prompt`` using the local knowledge base."""
-
-        tag = self._extract_tag(prompt)
-        if tag and tag in self.tag_to_description:
-            return self._trim(self.tag_to_description[tag], max_length)
-
-        # Fall back to fuzzy matching: look for any known tag name inside the
-        # prompt (even without angle brackets).
-        lowered = prompt.lower()
-        for known_tag, description in self.tag_to_description.items():
-            plain = known_tag.strip("<>").lower()
-            if len(plain) <= 1:
-                continue
-            if re.search(rf"\b{re.escape(plain)}\b", lowered):
-                return self._trim(description, max_length)
-
-        return self._trim(
-            (
-                "I'm a tiny in-repo language model that specialises in HTML "
-                "elements, but I don't recognise that prompt yet. Try asking "
-                "about a specific tag like <a> or <section>."
-            ),
-            max_length,
-        )
-
-    def _extract_tag(self, prompt: str) -> str | None:
-        match = self._TAG_PATTERN.search(prompt)
-        if match:
-            return match.group(0)
-        return None
-
-    @staticmethod
-    def _trim(text: str, max_length: int) -> str:
-        if max_length <= 0:
-            return ""
-        if len(text) <= max_length:
-            return text
-        trimmed = text[: max_length - 1].rstrip()
-        return f"{trimmed}…"
-
-
 def create_generator(model: str, pairs: Sequence[tuple[str, str]]) -> LocalHTMLTagLLM:
     """Create the requested local LLM instance."""
 
@@ -125,10 +75,48 @@ def create_generator(model: str, pairs: Sequence[tuple[str, str]]) -> LocalHTMLT
     return LocalHTMLTagLLM(tag_to_description)
 
 
-def generate_text(generator: LocalHTMLTagLLM, prompt: str, max_length: int) -> str:
-    """Generate a completion for the provided prompt using the local LLM."""
+def _call_hf_generator(
+    generator: Callable[[str, int, int], Sequence[dict[str, Any]]],
+    prompt: str,
+    max_length: int,
+    num_return_sequences: int,
+) -> str:
+    """Invoke a HuggingFace-style generator and extract the text output."""
 
-    return generator.generate(prompt, max_length)
+    results = generator(prompt, max_length, num_return_sequences)
+    if not results:
+        return ""
+
+    first = results[0]
+    if isinstance(first, dict) and "generated_text" in first:
+        text = first["generated_text"]
+        if isinstance(text, str):
+            return text
+    if isinstance(first, str):
+        return first
+    raise TypeError(
+        "Unsupported response from generator: expected a mapping containing "
+        "'generated_text' or a plain string."
+    )
+
+
+def generate_text(
+    generator: LocalHTMLTagLLM | Callable[[str, int, int], Sequence[dict[str, Any]]],
+    prompt: str,
+    max_length: int,
+    *,
+    num_return_sequences: int = 1,
+) -> str:
+    """Generate a completion for the provided prompt using the selected LLM."""
+
+    if hasattr(generator, "generate"):
+        # ``LocalHTMLTagLLM`` exposes a ``generate`` method matching this API.
+        return generator.generate(prompt, max_length)  # type: ignore[return-value]
+
+    if callable(generator):
+        return _call_hf_generator(generator, prompt, max_length, num_return_sequences)
+
+    raise TypeError("Generator must expose a 'generate' method or be callable.")
 
 
 def run_dataset_demo(

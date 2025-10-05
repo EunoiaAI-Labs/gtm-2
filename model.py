@@ -1,6 +1,27 @@
 import numpy as np
-import tensorflow as tf
-from tensorflow.contrib.training import HParams
+import re
+from dataclasses import dataclass
+
+try:
+    import tensorflow as tf  # type: ignore
+    from tensorflow.contrib.training import HParams  # type: ignore
+except Exception:  # pragma: no cover - TensorFlow is optional for tests
+    tf = None  # type: ignore[assignment]
+
+    class HParams(dict):
+        """Light-weight stand-in when TensorFlow's ``HParams`` is unavailable."""
+
+        def __init__(self, **kwargs):
+            super().__init__(**kwargs)
+
+        def __getattr__(self, item):
+            try:
+                return self[item]
+            except KeyError as exc:  # pragma: no cover - debug helper
+                raise AttributeError(item) from exc
+
+        def __setattr__(self, key, value):  # pragma: no cover - debug helper
+            self[key] = value
 
 
 def _ensure_batch(x):
@@ -301,3 +322,51 @@ class ParagraphGenerator(object):
                     break
 
         return generated[0]
+
+
+@dataclass
+class LocalHTMLTagLLM:
+    """A deliberately tiny HTML-specialist LLM used for demos and tests."""
+
+    tag_to_description: dict[str, str]
+
+    _TAG_PATTERN = re.compile(r"<[^>]+>")
+
+    def generate(self, prompt: str, max_length: int) -> str:
+        """Return a completion for ``prompt`` using the local knowledge base."""
+
+        tag = self._extract_tag(prompt)
+        if tag and tag in self.tag_to_description:
+            return self._trim(self.tag_to_description[tag], max_length)
+
+        lowered = prompt.lower()
+        for known_tag, description in self.tag_to_description.items():
+            plain = known_tag.strip("<>").lower()
+            if len(plain) <= 1:
+                continue
+            if re.search(rf"\b{re.escape(plain)}\b", lowered):
+                return self._trim(description, max_length)
+
+        return self._trim(
+            (
+                "I'm a tiny in-repo language model that specialises in HTML "
+                "elements, but I don't recognise that prompt yet. Try asking "
+                "about a specific tag like <a> or <section>."
+            ),
+            max_length,
+        )
+
+    def _extract_tag(self, prompt: str) -> str | None:
+        match = self._TAG_PATTERN.search(prompt)
+        if match:
+            return match.group(0)
+        return None
+
+    @staticmethod
+    def _trim(text: str, max_length: int) -> str:
+        if max_length <= 0:
+            return ""
+        if len(text) <= max_length:
+            return text
+        trimmed = text[: max_length - 1].rstrip()
+        return f"{trimmed}…"
